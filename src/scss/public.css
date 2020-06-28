@@ -1,0 +1,190 @@
+/*公共区域*/
+.main {
+  width: 1080px;
+  margin: 0 auto;
+}
+.header {
+  height: 124px;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+.header .header-top {
+  height: 48px;
+  background-color: #333;
+  font-size: 14px;
+}
+.header .header-top ul {
+  width: 475px;
+  height: 48px;
+  float: right;
+}
+.header .header-top ul :nth-child(3) {
+  width: 110px;
+}
+.header .header-top ul :nth-child(4) {
+  width: 170px;
+  border: none;
+}
+.header .header-top ul li {
+  width: 84px;
+  height: 24px;
+  color: #e7e7e7;
+  border-right: 1px solid #ccc;
+  float: left;
+  line-height: 24px;
+  margin: 12px auto;
+  text-align: center;
+  position: relative;
+}
+.header .header-top ul li .f1 {
+  width: 25px;
+  height: 25px;
+  font-size: 24px;
+  margin: 5px;
+  position: absolute;
+  top: -8px;
+  left: 5px;
+}
+.header .header-top ul li .f2 {
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+}
+.header .header-top ul li .f3 {
+  font-size: 20px;
+}
+.header .header-top ul .act {
+  width: 130px;
+}
+.header .header-top ul .act span {
+  margin-left: 30px;
+}
+.header .header-top ul .act2 {
+  width: 80px;
+}
+.header .header-top ul .act2 a {
+  color: #e7e7e7;
+  margin-left: 5px;
+}
+.header .header-top ul .act2 a:hover {
+  color: #fff;
+}
+.header .header-top ul li:hover {
+  color: #fff;
+}
+.header .header-nav {
+  height: 76px;
+}
+.header .header-nav .nav-first {
+  width: 123px;
+  height: 76px;
+  background: url("../img/logn2.png") 50% no-repeat;
+  background-size: 100%;
+  margin-top: 7px;
+  float: left;
+}
+.header .header-nav .nav-second {
+  width: 140px;
+  height: 76px;
+  float: left;
+}
+.header .header-nav .nav-three {
+  width: 420px;
+  height: 76px ;
+  font-size: 18px;
+  color: #666;
+  line-height: 98px;
+  float: left;
+}
+.header .header-nav .nav-three :nth-child(2) {
+  margin-left: 30px;
+}
+.header .header-nav .nav-four {
+  width: 282px;
+  height: 50px;
+  border-bottom: 1px solid #e7e7e7;
+  float: left;
+  margin-left: 40px;
+  margin-top: 12px;
+}
+.header .header-nav .nav-four a {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 68px;
+  color: #333;
+}
+.header .header-nav .nav-four a:hover {
+  color: #a75d08;
+}
+.header .header-nav .nav-four input {
+  width: 245px;
+  height: 26px;
+  border: none;
+  margin-left: 11px;
+}
+.header .header-nav .nav-fine {
+  width: 58px;
+  height: 50px;
+  float: right;
+  font-size: 52px;
+  position: relative;
+}
+.header .header-nav .nav-fine span {
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+  font-size: 8px;
+  border-radius: 20px;
+  background-color: #c00000;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 10px ;
+  top: 32px ;
+}
+.content {
+  min-height: 616px ;
+}
+.floot {
+  height: 136px;
+  border-top: 1px solid #e7e7e7;
+}
+.floot .floot-first {
+  width: 148px;
+  height: 76px;
+  background: url("../img/logn2.png") 50% no-repeat;
+  background-size: 100%;
+  margin-top: 32px;
+  float: left;
+}
+.floot .floot-second {
+  width: 549px;
+  height: 92px;
+  float: right;
+  margin-top: 42px;
+  padding-right: 129px;
+  font-size: 12px;
+  color: #666;
+  position: relative;
+}
+.floot .floot-second p {
+  width: 549px;
+  height: 20px;
+  margin: 3px;
+}
+.floot .floot-second p span {
+  margin: 12px;
+}
+.floot .floot-second p img {
+  display: inline;
+  margin-left: 6px;
+  width: 16px;
+}
+.floot .floot-second .cx {
+  width: 100px;
+  height: 46px;
+  position: absolute;
+  left: 557px;
+  top: 6px;
+}

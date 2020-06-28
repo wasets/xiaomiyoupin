@@ -1,0 +1,144 @@
+/*登录样式*/
+body {
+  background: #f5f5f5;
+  color: #757575;
+  font-size: 14px;
+}
+body .box {
+  width: 856px ;
+  height: 480px ;
+  background-color: #fff;
+  margin: 172px auto;
+}
+body .box .box-cont {
+  width: 360px ;
+  height: 456px;
+  margin: 0px auto;
+  padding-top: 25px ;
+}
+body .box .box-cont img {
+  margin: 0px auto;
+}
+body .box .box-cont h1 {
+  width: 360px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 22px;
+  color: #000000;
+  margin-top: 8px;
+}
+body .box .box-cont input {
+  width: 360px;
+  height: 48px;
+  border: none;
+  border: 1px solid #e8e8e8;
+  text-indent: 10px;
+  margin-bottom: 14px;
+  color: #333;
+}
+body .box .box-cont :nth-child(5) {
+  background-color: #ff6700;
+  color: #fff;
+  border: none;
+  margin-top: 9px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+body .box .regi {
+  width: 360px;
+  height: 25px;
+}
+body .box .regi .regi-left {
+  width: 120px;
+  float: left;
+  color: #ff6700;
+}
+body .box .regi .regi-right {
+  width: 140px;
+  float: right;
+  color: #757575;
+}
+body .box .regi .regi-right span:hover {
+  color: #ff6700;
+}
+body .box .fomake {
+  width: 360px;
+  height: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+body .box .fomake div {
+  width: 360px;
+  border-top: 1px solid #e8e8e8;
+  position: absolute;
+  top: 10px;
+}
+body .box .fomake span {
+  background-color: #fff;
+  position: absolute;
+  left: 140px;
+  color: #b0b0b0;
+}
+body .box .elesty {
+  width: 360px;
+  height: 30px;
+  margin-top: 16px;
+}
+body .box .elesty .elesty-cont {
+  width: 220px;
+  height: 30px;
+  margin: 0 auto;
+}
+body .box .elesty a {
+  float: left;
+  margin: 0px 12px;
+}
+.floot {
+  width: 854px;
+  height: 84px;
+  margin: 0px auto;
+}
+.floot ul {
+  width: 340px;
+  height: 25px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #757575;
+  padding-top: 20px ;
+}
+.floot ul :nth-child(1) {
+  color: #333;
+}
+.floot ul :nth-child(3) {
+  width: 67px;
+}
+.floot ul :nth-child(4) {
+  width: 72px;
+}
+.floot ul :nth-child(5) {
+  width: 72px;
+  border: none;
+}
+.floot ul li:hover {
+  color: #333;
+}
+.floot li {
+  width: 60px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  border-right: 1px solid #757575;
+  float: left;
+}
+.floot .floot-connt {
+  width: 573px;
+  height: 20px;
+  font-size: 14px;
+  color: #9d9d9d;
+  line-height: 20px;
+  margin: 2px auto;
+}
+.floot .floot-connt img {
+  display: inline;
+}

@@ -1,0 +1,200 @@
+/*公共区域*/
+.main{
+    width: 1080px;
+    margin: 0 auto;
+}
+.header{
+    height: 124px;
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    // background-color: red;
+    .header-top{
+        height: 48px;
+        background-color: #333;
+        font-size: 14px;
+        ul{
+            width: 475px;
+            height: 48px;
+           
+            float: right;
+           
+            :nth-child(3){
+                width: 110px;
+            }
+            :nth-child(4){
+                width: 170px;
+                border: none;
+            }
+            li{
+                width: 84px;
+                height:24px;
+                color: #e7e7e7;
+                border-right:1px solid #ccc ;
+                float: left;
+                line-height: 24px;
+                margin: 12px auto;
+                text-align: center;
+                position: relative;
+               
+               .f1{
+                   width: 25px;
+                   height: 25px;
+                   font-size: 24px;
+                   margin: 5px;
+                   position: absolute;
+                   top: -8px;
+                   left: 5px;
+                   
+               }
+               .f2{
+                   width: 18px;
+                   height: 18px;
+                   font-size: 14px;
+               }
+               .f3{
+                   font-size: 20px;
+               }
+
+            }
+             .act{
+                    width: 130px;
+                    span{
+                        margin-left: 30px;
+                    }
+                }
+                .act2{
+                    width: 80px;
+                    a{ 
+                        color: #e7e7e7;
+                        margin-left: 5px;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                }
+                li:hover{
+                    color: #fff;
+                }
+        }
+    }
+    .header-nav{
+        height: 76px;
+        .nav-first{
+            width: 123px;
+            height: 76px;
+            background: url("../img/logn2.png") 50% no-repeat;
+            background-size: 100%;
+            margin-top: 7px;
+            float: left;
+        }
+        .nav-second{
+            width: 140px;
+            height: 76px;
+            float: left;
+        }
+        .nav-three{
+            width: 420px;
+            height:76px ;
+            font-size: 18px;
+            color:#666 ;
+            line-height: 98px;
+            float: left;
+            :nth-child(2){
+                margin-left: 30px;
+            }           
+        }
+        .nav-four{
+            width: 282px;
+            height: 50px;
+            border-bottom:1px solid #e7e7e7;
+            float: left;
+            margin-left: 40px;
+            margin-top: 12px;
+            a{
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                line-height: 68px;
+                color: #333;
+                
+            }
+           a:hover{
+                    color: rgb(167, 93, 8);
+                }
+            input{
+                width: 245px;
+                height: 26px;
+               border: none;
+               margin-left: 11px;
+            }    
+        }
+        .nav-fine{
+            width: 58px;
+            height: 50px;
+            float: right;
+            font-size: 52px;
+            position: relative;
+            span{
+                display: inline-block;
+                width: 21px;
+                height: 17px;
+                font-size: 8px;
+                border-radius: 20px;
+                background-color: #c00000;
+                text-align: center;
+               color: #fff;
+               position: absolute;
+               left:10px ;
+               top:32px ;
+            }
+        }
+    }
+}
+//中间
+.content{
+    min-height:616px ;
+}
+//尾部
+.floot{
+    height: 136px;
+    border-top:1px solid #e7e7e7 ;
+    .floot-first{
+        width: 148px;
+        height: 76px;
+        background: url("../img/logn2.png") 50% no-repeat;
+        background-size: 100%;
+        margin-top: 32px;
+        float: left;
+    }
+    .floot-second{
+        width: 549px;
+        height: 92px;   
+        float: right;
+        margin-top: 42px;
+        padding-right: 129px;
+        font-size: 12px;
+        color: #666;
+        position: relative;
+        p{
+            width: 549px;
+            height: 20px;
+            margin: 3px;
+            span{
+                margin: 12px;
+            }
+            img{
+            display: inline;
+            margin-left: 6px;
+            width: 16px;
+        }
+        }
+        .cx{
+            width: 100px;
+            height: 46px;
+            position: absolute;
+            left: 557px;
+            top: 6px;
+        }
+        
+    }
+}

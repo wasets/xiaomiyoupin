@@ -1,0 +1,201 @@
+body {
+  background-color: #f9f9f9;
+}
+.box {
+  width: 854px;
+  height: 734px;
+  margin: 92px auto;
+  background-color: #fff;
+}
+.box .box-context {
+  width: 786px;
+  height: 702px;
+  padding: 0px 34px 34px 34px;
+}
+.box .box-context img {
+  margin: 0 auto;
+}
+.box .box-context h2 {
+  width: 786px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  color: #000000;
+  margin-top: 40px;
+}
+.box .box-context .regcont {
+  font-size: 14px;
+  width: 332px;
+  height: 540px ;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+.box .box-context .regcont h4 {
+  width: 332px;
+  height: 25px;
+  padding-bottom: 5px;
+  color: #333;
+  font-size: 14px;
+  line-height: 25px;
+}
+.box .box-context .regcont .city {
+  width: 332px;
+  height: 42px;
+}
+.box .box-context .regcont .city #city1 {
+  width: 290px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  text-indent: 10px;
+  float: left;
+  border-right: none;
+}
+.box .box-context .regcont .city .icon {
+  display: inline-block;
+  width: 40px ;
+  height: 42px ;
+  border-right: 1px solid #e8e8e8;
+  background: url("../img/select.png") no-repeat 0px 0px;
+}
+.box .box-context .regcont .title-cont {
+  width: 332px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.box .box-context .regcont .user-set,
+.box .box-context .regcont .pwd-set,
+.box .box-context .regcont .pwd-again {
+  width: 332px;
+  height: 62px;
+}
+.box .box-context .regcont .user-set #user,
+.box .box-context .regcont .pwd-set #user,
+.box .box-context .regcont .pwd-again #user,
+.box .box-context .regcont .user-set #pwd,
+.box .box-context .regcont .pwd-set #pwd,
+.box .box-context .regcont .pwd-again #pwd,
+.box .box-context .regcont .user-set #pwd-confi,
+.box .box-context .regcont .pwd-set #pwd-confi,
+.box .box-context .regcont .pwd-again #pwd-confi {
+  width: 332px;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  text-indent: 10px;
+}
+.box .box-context .regcont .user-set p,
+.box .box-context .regcont .pwd-set p,
+.box .box-context .regcont .pwd-again p {
+  width: 332px;
+  height: 15px;
+  font-size: 14px;
+  text-indent: 10px;
+  color: red;
+  line-height: 15px;
+  margin: 5px 0px;
+  display: none;
+}
+.box .box-context .regcont .selectnum {
+  width: 332px ;
+  height: 57px;
+}
+.box .box-context .regcont .selectnum .num-left {
+  width: 74px ;
+  height: 40px;
+  border: 1px solid #e8e8e8;
+  font-size: 14px;
+  color: #555;
+  text-indent: 5px;
+  line-height: 40px;
+  background: url("../img/zhi.png") no-repeat 42px 14px;
+  float: left;
+}
+.box .box-context .regcont .selectnum #iphone {
+  width: 254px;
+  height: 40px;
+  border: none;
+  border: 1px solid #e8e8e8;
+  text-indent: 10px;
+}
+.box .box-context .regcont .selectnum p {
+  width: 332px;
+  height: 15px;
+  font-size: 14px;
+  text-indent: 10px;
+  color: red;
+  line-height: 15px;
+  margin: 5px 0px;
+  display: none;
+}
+.box .box-context .regcont #submit-t {
+  width: 332px;
+  height: 42px;
+  background-color: #ff6700;
+  border: 1px solid rgba(186, 186, 186, 0.3);
+  color: #fff;
+  margin-top: 10px;
+}
+.box .box-context .regcont #submit-t:hover {
+  background-color: #ff936a;
+}
+.box .box-context .regcont .agree {
+  width: 260px;
+  height: 39px;
+  font-size: 14px;
+  color: #9d9d9d;
+  line-height: 51px;
+  margin: 0 auto;
+}
+.box .box-context .regcont .agree span {
+  color: #333;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.floot {
+  width: 854px;
+  height: 84px;
+  margin: 0px auto;
+}
+.floot ul {
+  width: 254px;
+  height: 25px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #757575;
+  padding-top: 20px ;
+}
+.floot ul :nth-child(1) {
+  color: #333;
+}
+.floot ul :nth-child(3) {
+  width: 67px;
+}
+.floot ul :nth-child(4) {
+  width: 72px;
+  border: none;
+}
+.floot ul li:hover {
+  color: #333;
+}
+.floot li {
+  width: 56px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  border-right: 1px solid #757575;
+  float: left;
+}
+.floot .floot-connt {
+  width: 573px;
+  height: 20px;
+  font-size: 14px;
+  color: #9d9d9d;
+  line-height: 20px;
+  margin: 10px auto;
+}
+.floot .floot-connt img {
+  display: inline;
+}
