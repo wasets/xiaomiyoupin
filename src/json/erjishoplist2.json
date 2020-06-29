@@ -1,0 +1,212 @@
+[
+    {
+        "good_id": 1,
+        "img": "https://img.youpin.mi-img.com/shopmain/32203cd3ce8b126d57d9e3f38ab1ceb7.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "小米降噪项圈蓝牙耳机",
+        "desc": "Hybrid 混合数字降噪，最长20小...",
+        "price": "399"
+    },
+    {
+        "good_id": 2,
+        "img": "https://img.youpin.mi-img.com/shopmain/6d5a4eada284195d34d7d57de43a2fd2.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "Apple 苹果 AirPods 2 二代无线...",
+        "desc": "Apple蓝牙耳机 适用iPhone/iPa...",
+        "price": "999"
+    },
+    {
+        "good_id": 3,
+        "img": "https://img.youpin.mi-img.com/800_pic/5bb47ec5d739c03e28665033b128765f.png@base@tag=imgScale&F=webp",
+        "title": "咕咚智能心率耳机Quiet",
+        "desc": "实时心率，舒适降噪，醇厚音质...",
+        "price": "89"
+    },
+    {
+        "good_id": 4,
+        "img": "https://img.youpin.mi-img.com/800_pic/2a99450e8fe70ac48118202378f36c0c.png@base@tag=imgScale&F=webp",
+        "title": "1MORE 好声音入耳式耳机",
+        "desc": "80%金属机身，金属复合振膜+金...",
+        "price": "129"
+    },
+    {
+        "good_id": 5,
+        "img": "https://img.youpin.mi-img.com/shopmain/3d9046ede979c1ee35fa80262b736175.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "QCY T4真无线双耳智能游戏蓝牙...",
+        "desc": "弹窗配对，APP自定义设置，迷你...",
+        "price": "99.9"
+    },
+    {
+        "good_id": 6,
+        "img": "https://img.youpin.mi-img.com/shopmain/700f74ba4a8cdc67ebf40010bed55689.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "FIIL T1X 真无线运动蓝牙耳机...",
+        "desc": "闪连 · 快充 · 秒同步",
+        "price": "299"
+    },
+    {
+        "good_id": 7,
+        "img": "https://img.youpin.mi-img.com/shopmain/f0c4a2590689ce532aa530fc50c53611.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "海备思AUX蓝牙接收器",
+        "desc": "蓝牙5.0，立体声输出 ；内置双...",
+        "price": "45"
+    },
+    {
+        "good_id": 8,
+        "img": "https://img.youpin.mi-img.com/shopmain/2c91cbe00986b14210594aba9c5cda7d.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "索尼WH-CH510无线蓝牙头戴式耳...",
+        "desc": "真无线立体声 蓝牙5.0连接30mm...",
+        "price": "308"
+    },
+    {
+        "good_id": 9,
+        "img": "https://img.youpin.mi-img.com/shopmain/d000adfc844a2f9433f147741ef4122c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "QCY T5Pro真无线双耳动铁蓝牙耳...",
+        "desc": "全频动铁，支持无线充电，弹窗...",
+        "price": "149.9"
+    },
+    {
+        "good_id": 10,
+        "img": "https://img.youpin.mi-img.com/shopmain/244f85d48e2cfa777512843775fa1f41.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "PaMu Slide mini 真无线双麦降...",
+        "desc": "高通芯片，双麦通话降噪，无线...",
+        "price": "369"
+    },
+    {
+        "good_id": 11,
+        "img": "https://img.youpin.mi-img.com/800_pic/76722374e5d47680c687526362bba3b1.png@base@tag=imgScale&F=webp",
+        "title": "Sony/索尼 WI-C310 颈挂入耳式...",
+        "desc": "蓝牙5.0无线连接，9MM驱动单元...",
+        "price": "269"
+    },
+    {
+        "good_id": 12,
+        "img": "https://img.youpin.mi-img.com/shopmain/23bed42703ed97fe5659900fa9ca5fff.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "TicPods 2 Pro AI交互真无线耳...",
+        "desc": "点头操控 耳边口令 HiFi音质",
+        "price": "699"
+    },
+    {
+        "good_id": 13,
+        "img": "https://img.youpin.mi-img.com/800_pic/1a6082ef5dbe635d6387fe1300e5f4a1.png@base@tag=imgScale&F=webp",
+        "title": "1MORE Stylish双动圈颈挂式蓝牙...",
+        "desc": "流线型设计，双动圈单元，蓝牙...",
+        "price": "269"
+    },
+    {
+        "good_id": 14,
+        "img": "https://img.youpin.mi-img.com/shopmain/b4b23a9095aade33486672bc322e97f2.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "Haylou真无线蓝牙耳机Haylou-G...",
+        "desc": "蓝牙5.0，多功能触控，实时显示...",
+        "price": "129"
+    },
+    {
+        "good_id": 15,
+        "img": "https://img.youpin.mi-img.com/shopmain/1e1842b937f1262df225d25f73272715.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "海备思 AUX蓝牙发射器/接收器 ...",
+        "desc": "蓝牙5.0 接收+发射 可弯曲  可...",
+        "price": "175"
+    },
+    {
+        "good_id": 16,
+        "img": "https://img.youpin.mi-img.com/shopmain/498ed059a615e8c038c78313b0a34257.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "FIIL T1 曜石黑 真无线蓝牙耳机...",
+        "desc": "开盒闪连/蓝牙5.0稳定传输/24小...",
+        "price": "279"
+    },
+    {
+        "good_id": 17,
+        "img": "https://img.youpin.mi-img.com/shopmain/59f5087163fac6a6df89f06026c6bddc.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "索尼WI-XB400无线蓝牙入耳式重...",
+        "desc": "强劲重低音，蓝牙5.0连接，磁性...",
+        "price": "349"
+    },
+    {
+        "good_id": 18,
+        "img": "https://img.youpin.mi-img.com/shopmain/3dfcb929fb5e663d4e47df0314c393bb.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "PaMu Slide 真无线入耳式双麦降...",
+        "desc": "高通芯片，Hi-End立体声，双麦...",
+        "price": "69"
+    },
+    {
+        "good_id": 19,
+        "img": "https://img.youpin.mi-img.com/shopmain/8a46b73f92da46c8dc71ff09bbebb226.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "韶音AEROPEX AS800骨传导运动蓝...",
+        "desc": "全新上市，IP67防水升级，8小时...",
+        "price": "1298"
+    },
+    {
+        "good_id": 20,
+        "img": "https://img.youpin.mi-img.com/shopmain/0a096aacc4c20618d1de57778d3714ab.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "索尼WH-1000XM3无线降噪耳机",
+        "desc": "无线妙不可言，主动降噪，专业...",
+        "price": "1599"
+    },
+    {
+        "good_id": 21,
+        "img": "https://img.youpin.mi-img.com/shopmain/51de57e304e87307c2a04d31729b6731.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "Bose 无线蓝牙降噪耳机 QuietC...",
+        "desc": "颈环设计，11级消噪调节，抗噪...",
+        "price": "1999"
+    },
+    {
+        "good_id": 22,
+        "img": "https://img.youpin.mi-img.com/shopmain/2e6db089035f1fc96812951e57f4065f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "AfterShokz韶音Air AS650骨传导...",
+        "desc": "专业运动耳机，轻盈舒适，长时...",
+        "price": "898"
+    },
+    {
+        "good_id": 23,
+        "img": "https://img.youpin.mi-img.com/800_pic/3df340bd60e576076ddab02173a629a5.png@base@tag=imgScale&F=webp",
+        "title": "兴戈洛神EM2圈铁耳机",
+        "desc": "Hi-Res认证，动圈动铁双单元，...",
+        "price": "599"
+    },
+    {
+        "good_id": 24,
+        "img": "https://img.youpin.mi-img.com/800_pic/6e011007a9d5f9a4d5ffd728b8c8e657.png@base@tag=imgScale&F=webp",
+        "title": "1MORE Stylish双动圈入耳式耳机...",
+        "desc": "石墨烯+金属钛双动圈单元，金属...",
+        "price": "169"
+    },
+    {
+        "good_id": 25,
+        "img": "https://img.youpin.mi-img.com/800_pic/b7f0a432b7009437e0fe17a2fcadfebf.png@base@tag=imgScale&F=webp",
+        "title": "1MORE iBFree蓝牙耳机",
+        "desc": "8小时音乐播放，IPX6级防水线控...",
+        "price": "249"
+    },
+    {
+        "good_id": 26,
+        "img": "https://img.youpin.mi-img.com/shopmain/e92009aa835d87cd4b67964b9b07df39.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "小米圈铁四单元耳机",
+        "desc": "双圈双铁四单元，分频准确，Hi...",
+        "price": "799"
+    },
+    {
+        "good_id": 27,
+        "img": "https://img.youpin.mi-img.com/shopmain/2da71584860a861593937e1ee3a51142.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "Apple 苹果 AirPods Pro主动降...",
+        "desc": "主动降噪无线蓝牙耳机 适用iPh...",
+        "price": "1799"
+    },
+    {
+        "good_id": 28,
+        "img": "https://img.youpin.mi-img.com/shopmain/1851c8caf772412f72d8f803d3267418.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "索尼 真无线蓝牙降噪耳机 WF-1...",
+        "desc": "真无线耳机，数字智能降噪，数...",
+        "price": "1299"
+    },
+    {
+        "good_id": 29,
+        "img": "https://img.youpin.mi-img.com/shopmain/804a92b63f4b1e9daae04efc698009e2.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "Bose SoundSport Wireless运动...",
+        "desc": "佩戴舒服稳固，防汗抗湿，震撼...",
+        "price": "1199"
+    },
+    {
+        "good_id": 30,
+        "img": "https://img.youpin.mi-img.com/shopmain/77ae0b65f08b680e44da74a446fcfd92.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+        "title": "索尼 WF-SP900真无线防水运动耳...",
+        "desc": "流线型外观设计，四种动感颜色...",
+        "price": "999"
+    }
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //数据抓取
+         var arr = [];
+        var lis = $0.querySelectorAll(".pro-item");
+        for (var i = 0; i < lis.length; i++) {
+            var o1 = {};
+            var li = lis[i];
+            o1.good_id = i+1;
+            o1.img = li.querySelector("img").src
+            o1.title = li.querySelector('.pro-info').innerText;
+            o1.desc = li.querySelector('.pro-desc').innerText;
+            o1.price = li.querySelector('.m-num').innerText;
+           
+            arr.push(o1);
+        }
+        console.log(arr)
+
+        var jsonStr = JSON.stringify(arr);
+        console.log(jsonStr);
+
+        //---------------------------
+        var arr = [];
+        var list =$0.querySelectorAll("a")
+        for (var i = 0; i < list.length; i++) {
+            var o1 ={}
+            var li =list[i]
+            o1.imgsrc =li.querySelector("img").src
+            arr.push(o1)
+        }
+        var jsonStr = JSON.stringify(arr);
+        console.log(jsonStr);
+
+    </script>
+</body>
+</html>

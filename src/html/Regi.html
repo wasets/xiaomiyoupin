@@ -7,8 +7,11 @@
     <title>小米帐号注册页</title>
     <link rel="stylesheet" href="../scss/rest.css">
     <link rel="stylesheet" href="../scss/regi.css">
-    <link rel="stylesheet" href="../js/jquery.js">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/md5.js"></script>
     <link rel="stylesheet" href="../js/regi.js">
+    <script src="../js/regi.js"></script>
 
 </head>
 
@@ -25,12 +28,24 @@
                 <div class="title-cont">成功注册账号后，国家/地区将不能被修改</div>
                 <h4>用户名</h4>
                 <div class="user-set">
-                    <input type="text" placeholder="请输入用户名" id="user" name="user">
+                    <input type="text" placeholder="请输入用户名 2到6个字符之间" id="user" name="user">
                     <p>请输入正确的用户名</p>
                 </div>
+                
+                <h4>验证码</h4>
+                <div class="coke-set">
+                    <input type="text" placeholder="请输入验证码" id="imgcoke" name="imgcoke">
+                    <div class="image-code-box">
+                        <canvas width="160" height="42" id="captcha"></canvas> 
+                    </div>
+                    <p>请输入正确的验证码</p>
+                </div>
+
+
                 <h4>密码</h4>
                 <div class="pwd-set">
-                    <input type="text" placeholder="请输入密码" id="pwd" name="pwd">
+                    <input type="text" placeholder="请输入密码 2到6个字符之间" id="pwd" name="pwd">
+                    
                     <p>请输入密码</p>
                 </div>
                 <h4>确认密码</h4>

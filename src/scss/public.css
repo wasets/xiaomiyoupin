@@ -146,6 +146,34 @@
 .content {
   min-height: 616px ;
 }
+.navi {
+  width: 71px;
+  height: 363px ;
+  padding: 0px 5px;
+  font-size: 14px;
+  color: #333;
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+.navi ul li {
+  width: 50px;
+  height: 49px;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center;
+  font-size: 12px;
+}
+.navi ul li i {
+  font-size: 30px;
+}
+.navi ul :nth-child(2) {
+  height: 64px;
+}
+.navi ul :nth-child(2) p {
+  font-size: 13px;
+}
 .floot {
   height: 136px;
   border-top: 1px solid #e7e7e7;

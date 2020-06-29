@@ -3,13 +3,13 @@ body {
 }
 .box {
   width: 854px;
-  height: 734px;
-  margin: 92px auto;
+  height: 821px;
+  margin: 46px auto;
   background-color: #fff;
 }
 .box .box-context {
   width: 786px;
-  height: 702px;
+  height: 789px;
   padding: 0px 34px 34px 34px;
 }
 .box .box-context img {
@@ -83,12 +83,15 @@ body {
 .box .box-context .regcont .pwd-again #pwd-confi {
   width: 332px;
   height: 40px;
-  border: 1px solid #e8e8e8;
   text-indent: 10px;
 }
-.box .box-context .regcont .user-set p,
-.box .box-context .regcont .pwd-set p,
-.box .box-context .regcont .pwd-again p {
+.box .box-context .regcont input {
+  border: 1px solid #e8e8e8;
+}
+.box .box-context .regcont .action {
+  border: 1px solid red ;
+}
+.box .box-context .regcont p {
   width: 332px;
   height: 15px;
   font-size: 14px;
@@ -98,11 +101,25 @@ body {
   margin: 5px 0px;
   display: none;
 }
-.box .box-context .regcont .selectnum {
+.box .box-context .regcont .coke-set {
+  width: 332px;
+  height: 62px;
+}
+.box .box-context .regcont .coke-set #imgcoke {
+  width: 160px;
+  height: 40px;
+  text-indent: 10px;
+  float: left;
+}
+.box .box-context .regcont .coke-set .image-code-box {
+  display: inline-block;
+  height: 42px;
+}
+.box .box-context .selectnum {
   width: 332px ;
   height: 57px;
 }
-.box .box-context .regcont .selectnum .num-left {
+.box .box-context .selectnum .num-left {
   width: 74px ;
   height: 40px;
   border: 1px solid #e8e8e8;
@@ -113,14 +130,12 @@ body {
   background: url("../img/zhi.png") no-repeat 42px 14px;
   float: left;
 }
-.box .box-context .regcont .selectnum #iphone {
+.box .box-context .selectnum #iphone {
   width: 254px;
   height: 40px;
-  border: none;
-  border: 1px solid #e8e8e8;
   text-indent: 10px;
 }
-.box .box-context .regcont .selectnum p {
+.box .box-context .selectnum p {
   width: 332px;
   height: 15px;
   font-size: 14px;
@@ -130,7 +145,7 @@ body {
   margin: 5px 0px;
   display: none;
 }
-.box .box-context .regcont #submit-t {
+.box .box-context #submit-t {
   width: 332px;
   height: 42px;
   background-color: #ff6700;
@@ -138,10 +153,10 @@ body {
   color: #fff;
   margin-top: 10px;
 }
-.box .box-context .regcont #submit-t:hover {
+.box .box-context #submit-t:hover {
   background-color: #ff936a;
 }
-.box .box-context .regcont .agree {
+.box .box-context .agree {
   width: 260px;
   height: 39px;
   font-size: 14px;
@@ -149,14 +164,14 @@ body {
   line-height: 51px;
   margin: 0 auto;
 }
-.box .box-context .regcont .agree span {
+.box .box-context .agree span {
   color: #333;
   font-weight: bold;
   margin-left: 4px;
 }
 .floot {
   width: 854px;
-  height: 84px;
+  height: 66px;
   margin: 0px auto;
 }
 .floot ul {
@@ -194,7 +209,7 @@ body {
   font-size: 14px;
   color: #9d9d9d;
   line-height: 20px;
-  margin: 10px auto;
+  margin: -5px auto;
 }
 .floot .floot-connt img {
   display: inline;

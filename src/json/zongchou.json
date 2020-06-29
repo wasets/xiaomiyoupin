@@ -1,0 +1,35 @@
+[
+    {
+        "bigtitle": " 小米有品众筹",
+        "span": "永远好奇 永远年轻",
+        "data": [
+            {
+                "imgsrc": "https://img.youpin.mi-img.com/shopmain/59d00ee882ffc52c7a90ec6cfff5789b.png?w=800&h=800",
+                "title": "小适高速电吹风",
+                "desc": "专利侧进聚风增压，9万转无刷马达...",
+                "price": "399",
+                "num": "10925",
+                "xintai": "火",
+                "percon": "437"
+            },
+            {
+                "imgsrc": "https://img.youpin.mi-img.com/shopmain/045d8cfe0f532eecfbd36e0a229e39bc.png?w=800&h=800",
+                "title": "样子戚风电动沙发",
+                "desc": "",
+                "price": "1599",
+                "num": "1691",
+                "xintai": "爆",
+                "percon": "638"
+            },
+            {
+                "imgsrc": "https://img.youpin.mi-img.com/shopmain/75924f8c82b1693036a21f0abcab2a32.png?w=800&h=800",
+                "title": "大屏互动学习机",
+                "desc": "",
+                "price": "1999",
+                "num": "1586",
+                "xintai": "火",
+                "percon": "317"
+            }
+        ]
+    }
+]

@@ -1,3 +1,92 @@
-div {
-  width: 200px;
+.banner {
+  height: 358px;
+  background-color: red;
+}
+.banner .banner-left {
+  height: 358px;
+  background-color: #9f8052;
+  width: 221px;
+  position: relative;
+}
+.banner .banner-left ul {
+  height: 345px;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 13px;
+  float: left;
+}
+.banner .banner-left ul li {
+  width: 161px;
+  padding: 0 30px;
+  height: 33.2px;
+  line-height: 33.2px;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.banner .banner-left ul li span:hover {
+  color: #dfaf7e;
+}
+.banner .banner-left ul li:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.banner .banner-list {
+  width: 859px;
+  height: 358px;
+  background-color: pink;
+  float: right;
+  position: absolute;
+  top: 0px;
+  left: 221px;
+}
+.banner .banner-list .banner-list-cont {
+  width: 826px;
+  height: 272px;
+  background-color: yellow;
+  margin-top: 20px;
+  margin-left: 33px;
+}
+.banner .banner-list .banner-list-cont h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #805e3f;
+  margin-bottom: 11px;
+}
+.banner .banner-list .banner-list-cont .item-pro {
+  width: 826px;
+  height: 50px;
+  font-size: 14px;
+  color: #333;
+  line-height: 50px;
+}
+.banner .banner-list .banner-list-cont .item-pro .item-title {
+  display: inline-block;
+  width: 56px;
+  height: 50px;
+  font-weight: 700;
+  text-align: justify;
+  text-align-last: justify;
+  margin: 0;
+  float: left;
+  font-size: 14px;
+  line-height: 50px;
+}
+.banner .banner-list .banner-list-cont .item-pro span {
+  display: inline-block;
+  height: 50px;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 49px;
+}
+.banner .banner-list .banner-list-cont .item-pro .item-list {
+  width: 724px;
+  height: 50px;
+  float: right;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.banner .banner-list .banner-list-cont .item-pro .item-list a {
+  color: #333;
+  margin-right: 10px;
+}
+.banner .banner-list .banner-list-cont .item-pro .item-list .action {
+  color: #bf1111;
 }
