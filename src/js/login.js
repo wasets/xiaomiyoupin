@@ -24,13 +24,14 @@ $(()=>{
             // alert(data.msg);
             /* 如果 */
             if (data.status == "success") {
-                alert(data.msg);
+                alert(data.data.msg);
               /* (1) 要把用户的id和名字保存起来 */
-        //  localStorage.setItem("user_id", data.data.userId);
-        //  localStorage.setItem("user_name", data.data.username);
+              console.log(data)
+            localStorage.setItem("user_id",data.data.userId );
+            localStorage.setItem("user_name",data.data.username );
 
           /* (2) 跳转回列表页 */
-        //    location.href = "../html/index.html";
+           location.href = "../html/index.html";
             } else {
                 alert(data.msg);
             }

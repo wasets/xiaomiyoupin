@@ -16,12 +16,13 @@
 .header .header-top ul {
   width: 475px;
   height: 48px;
+  position: relative;
   float: right;
 }
-.header .header-top ul :nth-child(3) {
+.header .header-top ul :nth-child(4) {
   width: 110px;
 }
-.header .header-top ul :nth-child(4) {
+.header .header-top ul :nth-child(5) {
   width: 170px;
   border: none;
 }
@@ -57,20 +58,41 @@
   width: 130px;
 }
 .header .header-top ul .act span {
-  margin-left: 30px;
+  margin-left: 15px;
+  font-size: 15px;
+  line-height: 18px;
 }
-.header .header-top ul .act2 {
+.header .header-top ul .lognout {
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 48px;
+  left: 15px;
+  display: none;
+}
+.header .header-top ul .lognout:hover {
+  background-color: #845f3f;
+}
+.header .header-top .act2 {
   width: 80px;
 }
-.header .header-top ul .act2 a {
+.header .header-top .act2 a {
   color: #e7e7e7;
   margin-left: 5px;
 }
-.header .header-top ul .act2 a:hover {
+.header .header-top .act2 a:hover {
   color: #fff;
 }
-.header .header-top ul li:hover {
+.header .header-top li:hover {
   color: #fff;
+}
+.header .header-top .ul-1 {
+  width: 498px;
 }
 .header .header-nav {
   height: 76px;

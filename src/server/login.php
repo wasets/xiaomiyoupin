@@ -11,24 +11,29 @@ $password = $_REQUEST["password"];
 include_once "./connectDB.php";
 
 $sql = "SELECT * FROM `user` WHERE username = '$username'";
-echo $sql;
+// echo $sql;
 $r = mysqli_query($db, $sql);
 
 $num = mysqli_num_rows($r); /* 该方法得到的是记录的条数:$r["num_rows"]  */
-echo $num;
+// echo $num;
 if($num == 1){
-    
-   echo $data = mysqli_fetch_all($r,MYSQLI_ASSOC);
-//   $data = mysqli_fetch_all($r,MYSQLI_ASSOC)[0];
-//   if($password  === $data["password"]){
-//     echo '{"status":"success","msg":"登录成功!"}';
-      /* ..登录成功.. */
-     
-//   }else{
-//     echo '{"status":"error","msg":"密码不正确!"}';
-//   }
-// }else{
-//   echo '{"status":"error","msg":"该用户名不存在!"}';
+   $res = mysqli_fetch_all($r,MYSQLI_ASSOC);
+   $res = $res[0];
+   if($password  === $res["password"]){
+//      echo '{"status":"success","msg":"登录成功!"}';
+      $userId = $res["id"];
+      $data["status"] = "success";
+      $data["data"]["msg"] = "登录成功";
+      $data["data"]["userId"] = $userId;
+      $data["data"]["password"] = $password;
+      $data["data"]["username"] = $username; 
+      # 最后，需要把结果以JSON数据的方式返回
+      echo json_encode($data,true);
+  }else{
+     echo '{"status":"error","msg":"密码不正确!"}';
+   }
+ }else{
+  echo '{"status":"error","msg":"该用户名不存在!"}';
 }
 
 
