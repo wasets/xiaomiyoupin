@@ -1,6 +1,7 @@
 .banner {
   height: 358px;
   background-color: red;
+  position: relative;
 }
 .banner .banner-left {
   height: 358px;
@@ -30,18 +31,22 @@
   background-color: rgba(0, 0, 0, 0.15);
 }
 .banner .banner-list {
+  display: none;
   width: 859px;
   height: 358px;
-  background-color: pink;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
   float: right;
   position: absolute;
   top: 0px;
   left: 221px;
+  color: #333;
+  font-size: 14px;
+  z-index: 2000;
 }
 .banner .banner-list .banner-list-cont {
   width: 826px;
   height: 272px;
-  background-color: yellow;
   margin-top: 20px;
   margin-left: 33px;
 }
@@ -61,18 +66,15 @@
 .banner .banner-list .banner-list-cont .item-pro .item-title {
   display: inline-block;
   width: 56px;
-  height: 50px;
   font-weight: 700;
   text-align: justify;
   text-align-last: justify;
   margin: 0;
   float: left;
   font-size: 14px;
-  line-height: 50px;
 }
 .banner .banner-list .banner-list-cont .item-pro span {
   display: inline-block;
-  height: 50px;
   margin-left: 10px;
   font-size: 20px;
   line-height: 49px;
@@ -89,4 +91,117 @@
 }
 .banner .banner-list .banner-list-cont .item-pro .item-list .action {
   color: #bf1111;
+}
+.banner .banner-list .banner-list-cont .item-pro2 {
+  width: 826px;
+  height: 56px;
+  line-height: 69px;
+  margin: 16px 16px 16px 0px;
+}
+.banner .banner-list .banner-list-cont .item-pro2 .item-title {
+  display: inline-block;
+  width: 56px;
+  font-weight: 700;
+  text-align: justify;
+  text-align-last: justify;
+  margin: 0;
+  float: left;
+  font-size: 14px;
+}
+.banner .banner-list .banner-list-cont .item-pro2 span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 35px;
+  float: left;
+}
+.banner .banner-list .banner-list-cont .item-pro2 .item-list {
+  width: 674px;
+  height: 53px;
+  line-height: 22px;
+  float: right;
+  border-bottom: 1px dashed #e6e6e6;
+  margin-right: 50px;
+}
+.banner .banner-list .banner-list-cont .item-pro2 .item-list a {
+  color: #333;
+  margin-right: 14px;
+}
+.banner .banner-list .banner-list-cont .item-pro2 .item-list .action {
+  color: #bf1111;
+}
+.banner .banner-right {
+  width: 859px;
+  height: 358px;
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  left: 221px;
+}
+.banner .banner-right #box {
+  width: 859px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.banner .banner-right #box img {
+  width: 859px;
+}
+.banner .banner-right #box ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner .banner-right #box ul li {
+  float: left;
+}
+.banner .banner-right #box ol {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
+.banner .banner-right #box ol li {
+  margin-right: 5px;
+  width: 20px;
+  user-select: none;
+  float: left;
+  border-radius: 20px ;
+  text-align: center;
+}
+.banner .banner-right #box ol li span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #cecece;
+}
+.banner .banner-right #box ol .gao {
+  border: none;
+}
+.banner .banner-right #box ol .gao span {
+  background-color: #a7936e;
+  border: 8px solid rgba(233, 232, 232, 0.6);
+  border-radius: 40px;
+}
+.banner .banner-right #box .btnLeft {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.banner .banner-right #box .btnRight {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.banner .banner-right #box button {
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -15px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
 }
