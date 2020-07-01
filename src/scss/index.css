@@ -1,3 +1,7 @@
+body {
+  font-size: 14px;
+  color: #333;
+}
 .banner {
   height: 358px;
   background-color: red;
@@ -204,4 +208,373 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.1);
   border: none;
+}
+.content {
+  min-height: 616px ;
+}
+.content .content-frist {
+  height: 189px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.content .content-frist ul {
+  width: 1028px;
+  height: 124px;
+  margin: 0px 38px 24px 28px;
+  padding-top: 48px;
+  justify-content: space-around;
+}
+.content .content-frist ul li {
+  width: 130px;
+  height: 124px;
+  float: left;
+  margin-right: 94px;
+}
+.content .content-frist ul li img {
+  width: 80px;
+  height: 80px;
+  margin: 0px auto;
+}
+.content .content-frist ul li p {
+  width: 130px;
+  height: 20px;
+  text-align: center;
+  color: #666666;
+  margin-top: 20px;
+}
+.content .content-frist ul :nth-child(5) {
+  margin-right: 0px;
+}
+.content .contemt-second-title {
+  height: 37px;
+  margin-bottom: 20px;
+  line-height: 37px;
+}
+.content .contemt-second-title .ft {
+  font-size: 28px;
+  font-weight: bold;
+}
+.content .contemt-second-title :nth-child(2) {
+  color: #999;
+  margin-left: 5px;
+}
+.content .contemt-second-title a {
+  color: #999;
+  float: right;
+}
+.content .contemt-second-title a span {
+  font-size: 14px;
+  margin: 0px 8px;
+  font-size: 18px;
+}
+.content .content-second {
+  height: 302px;
+  margin-top: 35px;
+}
+.content .content-second ul {
+  height: 245px;
+}
+.content .content-second ul li {
+  width: 266px;
+  height: 245px;
+  margin-left: 5px;
+  float: left;
+}
+.content .content-second ul li .se-cont {
+  height: 185px;
+  background-color: #f3f0e9;
+  padding: 26px 0px 0px 14px;
+  position: relative;
+}
+.content .content-second ul li .se-cont img {
+  width: 132px;
+  height: 124px;
+  position: absolute;
+  right: 25px;
+  top: 68px;
+}
+.content .content-second ul li .se-cont h3 {
+  color: #333;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+}
+.content .content-second ul li .se-cont p {
+  color: #999;
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+.content .content-second ul li .se-cont .second-price {
+  font-size: 24px;
+  line-height: 28px;
+  height: 28px;
+  overflow: hidden;
+  color: #a92112;
+  margin-top: 16px;
+}
+.content .content-second ul li .se-cont .second-price span {
+  font-size: 14px;
+}
+.content .content-second ul li .icon {
+  width: 100%;
+  height: 3px;
+  background: url("../img/second.jpg") 0 0 no-repeat;
+}
+.content .content-second ul li .pilun {
+  width: 100%;
+  height: 22px;
+  margin-top: 6px;
+  color: #a92112;
+}
+.content .content-second ul li .pilun span:nth-child(1) {
+  margin-left: 14px;
+  font-size: 18px;
+}
+.content .content-second ul li .pilun span:nth-child(2) {
+  color: #999;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.content .content-second ul li .pilun span:nth-child(3) {
+  display: inline-block;
+  width: 22px;
+  height: 18px;
+  background-color: #fecf00;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #fff;
+  line-height: 18px;
+  margin-left: 2px;
+}
+.content .content-second ul li .pilun span:nth-child(4) {
+  float: right;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.content .content-second ul li .pilun span:nth-child(4) i {
+  font-size: 11px;
+}
+.content .content-second ul li:nth-child(1) {
+  width: 537px;
+  margin-left: 0;
+}
+.content .content-second ul li:nth-child(1) .se-cont {
+  background-color: #f9f3e9;
+}
+.content .content-second ul li:nth-child(1) .se-cont img {
+  position: absolute;
+  right: 15px;
+  top: -10px;
+  width: 215px;
+  height: 215px;
+}
+.content .content-three,
+.content .content-four,
+.content .content-fine {
+  height: 411px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.content .content-three ul,
+.content .content-four ul,
+.content .content-fine ul {
+  width: 2700px ;
+  height: 354px;
+  position: relative;
+}
+.content .content-three ul li,
+.content .content-four ul li,
+.content .content-fine ul li {
+  width: 265px;
+  height: 354px;
+  background-color: #faf6ef;
+  margin-right: 5px;
+  float: left;
+}
+.content .content-three ul li img,
+.content .content-four ul li img,
+.content .content-fine ul li img {
+  width: 100%;
+}
+.content .content-three ul li .shoptitle,
+.content .content-four ul li .shoptitle,
+.content .content-fine ul li .shoptitle {
+  width: 266px;
+  height: 23px;
+  margin-top: 15px;
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+}
+.content .content-three ul li .price,
+.content .content-four ul li .price,
+.content .content-fine ul li .price {
+  text-align: center ;
+  color: #a92112;
+  margin-top: 11px;
+}
+.content .content-three ul li .price span,
+.content .content-four ul li .price span,
+.content .content-fine ul li .price span {
+  font-size: 15px;
+}
+.content .content-three ul li .price .newprice,
+.content .content-four ul li .price .newprice,
+.content .content-fine ul li .price .newprice {
+  font-size: 22px;
+}
+.content .content-three ul li .price .flag,
+.content .content-four ul li .price .flag,
+.content .content-fine ul li .price .flag {
+  font-size: 12px;
+}
+.content .content-three ul li .price .dol,
+.content .content-four ul li .price .dol,
+.content .content-fine ul li .price .dol {
+  font-size: 9px;
+  color: #333;
+  text-decoration: line-through;
+}
+.content .content-three ul li .price .oldprice,
+.content .content-four ul li .price .oldprice,
+.content .content-fine ul li .price .oldprice {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #333;
+}
+.content .content-three ul li:hover,
+.content .content-four ul li:hover,
+.content .content-fine ul li:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+.content .content-three .seckill-2,
+.content .content-four .seckill-2,
+.content .content-fine .seckill-2 {
+  height: 375px;
+}
+.content .content-three .seckill-2 li,
+.content .content-four .seckill-2 li,
+.content .content-fine .seckill-2 li {
+  height: 375px;
+  background-color: #fff;
+}
+.content .content-three .seckill-2 li .desc,
+.content .content-four .seckill-2 li .desc,
+.content .content-fine .seckill-2 li .desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 8px;
+  text-align: center;
+}
+.content .content-three .seckill-2 li .price,
+.content .content-four .seckill-2 li .price,
+.content .content-fine .seckill-2 li .price {
+  margin-top: 11px;
+}
+.content .content-three button,
+.content .content-four button,
+.content .content-fine button {
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -15px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  position: absolute;
+}
+.content .content-three .pre,
+.content .content-four .pre,
+.content .content-fine .pre,
+.content .content-three .pre2,
+.content .content-four .pre2,
+.content .content-fine .pre2 {
+  left: 5px;
+  top: 57%;
+}
+.content .content-three .next,
+.content .content-four .next,
+.content .content-fine .next,
+.content .content-three .next2,
+.content .content-four .next2,
+.content .content-fine .next2 {
+  top: 57%;
+  right: 5px;
+}
+.content .content-four {
+  height: 432px;
+  margin-top: 60px;
+}
+.content .content-fine {
+  height: 7157px;
+  margin-bottom: 100px;
+}
+.content .content-fine .seckill-3 {
+  width: 1080px;
+}
+.content .content-fine .seckill-3 li {
+  width: 263px;
+  height: 348px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 5px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.content .content-fine .seckill-3 li .img-top {
+  height: 233px;
+  background-color: #fff;
+}
+.content .content-fine .seckill-3 li .img-top img {
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  margin-left: -0.5px;
+  padding: 45px 70px 28px;
+}
+.content .content-fine .seckill-3 li .img-top p {
+  color: #845f3f;
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+.content .content-fine .seckill-3 li .img-top .con {
+  position: absolute;
+  padding: 3px;
+  left: 8px;
+  top: 8px;
+  width: 16px;
+  line-height: 18px;
+  font-size: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #9f8052;
+}
+.content .content-fine .seckill-3 li .tag-text {
+  padding: 0 6px;
+  width: 28px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
+  vertical-align: bottom;
+  height: 20px;
+  text-align: center;
+  margin: 13px auto;
+  margin-bottom: 0px;
+}
+.content .content-fine .seckill-3 li .price {
+  margin-top: 8px;
 }

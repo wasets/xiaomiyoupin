@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         //数据抓取
-         var arr = [];
+        var arr = [];
         var lis = $0.querySelectorAll(".pro-item");
         for (var i = 0; i < lis.length; i++) {
             var o1 = {};
             var li = lis[i];
-            o1.good_id = i+1;
+            o1.good_id = i + 1;
             o1.img = li.querySelector("img").src
             o1.title = li.querySelector('.pro-info').innerText;
             o1.desc = li.querySelector('.pro-desc').innerText;
             o1.price = li.querySelector('.m-num').innerText;
-           
+
             arr.push(o1);
         }
         console.log(arr)
@@ -28,16 +30,74 @@
 
         //---------------------------
         var arr = [];
-        var list =$0.querySelectorAll("a")
+        var list = $0.querySelectorAll("a")
         for (var i = 0; i < list.length; i++) {
-            var o1 ={}
-            var li =list[i]
-            o1.imgsrc =li.querySelector("img").src
+            var o1 = {}
+            var li = list[i]
+            o1.imgsrc = li.querySelector("img").src
             arr.push(o1)
         }
         var jsonStr = JSON.stringify(arr);
         console.log(jsonStr);
+        //-------------------
+        //获取shoprun的json
+        var arr = [];
+        var list = $0.querySelectorAll(".swiper-slide")
+        for (var i = 0; i < list.length; i++) {
+            var o1 = {}
+            var li = list[i]
+            o1.imgsrc = li.querySelector("img").src
+            o1.title = li.querySelector(".pro-info").innerText
+            o1.newprice = li.querySelector(".m-num").innerText
+            o1.desc = li.querySelector(".pro-desc").innerText
+            if (li.querySelector(".pro-flag")) {
+                o1.flag = li.querySelector(".pro-flag").innerText
+            } else {
+                o1.flag = ""
+            }
+            arr.push(o1)
+
+        }
+        var jsonStr = JSON.stringify(arr);
+        console.log(jsonStr);
+
+
+        o1.oldprice = li.querySelector(".market-price .m-num").innerText
+        ///--------------------------------
+        //index 下面的表
+        var arr = [];
+        var list = $0.querySelectorAll(".pro-item-category")
+        for (var i = 0; i < list.length; i++) {
+            var o1 = {}
+            var li = list[i]
+            o1.imgsrc = li.querySelector("img").src
+            o1.title = li.querySelector(".pro-info").innerText
+            o1.newprice = li.querySelector(".m-num").innerText
+            if(li.querySelector(".m-goods-pro-tag-con")){
+                 o1.tagcon = li.querySelector(".m-goods-pro-tag-con").innerText
+            }else{
+                o1.tagcon =""
+            }
+           
+            o1.desc = li.querySelector(".pro-desc").innerText
+            if (li.querySelector(".common-tag")) {
+                o1.common = li.querySelector(".common-tag").innerText
+            }else{
+                o1.common =""
+            }
+            if (li.querySelector(".pro-flag")) {
+                o1.flag = li.querySelector(".pro-flag").innerText
+            } else {
+                o1.flag = ""
+            }
+            arr.push(o1)
+
+        }
+        var jsonStr = JSON.stringify(arr);
+        console.log(jsonStr);
+
 
     </script>
 </body>
+
 </html>
