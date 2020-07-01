@@ -21,7 +21,7 @@ if($num == 1){
    $res = $res[0];
    if($password  === $res["password"]){
 //      echo '{"status":"success","msg":"登录成功!"}';
-      $userId = $res["id"];
+      $userId = $res["user_id"];
       $data["status"] = "success";
       $data["data"]["msg"] = "登录成功";
       $data["data"]["userId"] = $userId;

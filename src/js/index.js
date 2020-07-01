@@ -206,7 +206,7 @@ $(() => {
             this.index = 0;
             this.liwidth = 270;
             this.len = this.data.length;
-       console.log(this.data)
+    
         }
         //初始状态
         init() {
@@ -223,7 +223,7 @@ $(() => {
             </li>`
              
             }).join("")
-           console.log(arr)
+         
             $(".seckill").html(arr)
 
         }
@@ -268,7 +268,7 @@ $(() => {
             this.index = 0;
             this.liwidth = 270;
             this.len = this.data.length;
-       console.log(this.data)
+     
         }
         //初始状态
         init() {
@@ -286,7 +286,7 @@ $(() => {
             </li>`
              
             }).join("")
-           console.log(arr)
+          
             $(".seckill-2").html(arr)
 
         }
@@ -346,7 +346,7 @@ $(() => {
           <div class="shoptitle">${item.title}</div>              
          <p class="price"><span>￥</span><span class="newprice">${item.newprice}</span><span class="flag">${item.flag}</span></p>
         </li>` }).join("")   
-           console.log(arr)
+         
             $(".seckill-3").html(arr)
         }
     }
@@ -355,7 +355,7 @@ $(() => {
         url: "../server/shoprun1.php",
         dataType: "json",
     }).done(data => {
-        console.log(data)
+       
      let slider=  new shoprun(data)
         slider.init()
     })

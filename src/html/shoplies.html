@@ -6,9 +6,11 @@
     <title>购物车</title>
     <link rel="stylesheet" href="../scss/rest.css">
     <link rel="stylesheet" href="../scss/public.css">
-    <link rel="stylesheet" href="../scss/Shopping Cart.css">
-    <link rel="stylesheet" href="../js/jquery.js">
+    <link rel="stylesheet" href="../scss/shoplist.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/shoplist.js"></script>
     
 </head>
 <body>
@@ -17,15 +19,18 @@
          <div class="header-top">
              <div class="main">
                  <!-- 当判断是否登录，如果登录就要改变ul的width的长度498px -->
-             <ul >
-                 <li class="act2"><a href="./logn.html">登录</a><a href="./Regi.html">注册</a></li>
-                 <!-- <li class="act"><i class="iconfont icon-touxiang f1"></i><span>有你就好</span> <i class="iconfont icon-xialatubiao f2"></i></li> -->
-                
-                 <li>帮助中心</li>
-                 <li><i class="iconfont icon-shouji f3"></i>下载APP</li>
-                  
-                 <li>资质证照 / 协议规则<i class="iconfont icon-xialatubiao f2"></i></li>
-             </ul>
+                 <ul class="ul-1">
+
+                    <li class="act"><i class="iconfont icon-touxiang f1"></i><span>有你就好</span>
+                        <i class="iconfont icon-xialatubiao f2"></i>
+                    </li>
+                    <p class="lognout">退出登录</p>
+
+                    <li>帮助中心</li>
+                    <li><i class="iconfont icon-shouji f3"></i>下载APP</li>
+
+                    <li>资质证照 / 协议规则<i class="iconfont icon-xialatubiao f2"></i></li>
+                </ul>
              </div>
          </div>
         <div class="header-nav main">
@@ -36,7 +41,7 @@
                 <a class="iconfont icon-chazhao "href="javascript:;"></a>
                 <input type="text" value="" placeholder="搜一搜">
             </div>
-            <div class="nav-fine"><i class="iconfont icon-gouwuche"></i><span>0</span></div>
+            <div class="nav-fine"><i class="iconfont icon-gouwuche gou"></i><span>0</span></div>
         </div>
          
      </div>
@@ -67,8 +72,16 @@
         </ul>
     </div>
      <!-- 正文区 -->
-    <div class="content">
-        
+     <div class="content ">
+        <div class="content-fine main">
+            <div class="contemt-second-title">
+                <span class="ft">为你找到103条结果</span>
+            </div>
+            <ul class="seckill-1">
+                 
+            </ul>
+           
+        </div>
     </div>
      <!-- 版权和解释权 -->
      <div class="floot">
