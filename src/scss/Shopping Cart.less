@@ -22,6 +22,7 @@ min-height: 650px;
    .kong{
        height: 239px;
        padding: 100px 0px 200px 0px;
+       display: none;
    
        img{
            width: 153px;
@@ -59,265 +60,219 @@ min-height: 650px;
        }
    }
 }
-input[type="checkbox"] {
-    display: none;
-}
-label {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    border: 1px solid #b8b8b8;
-    margin-left: 10px;
-    border-radius: 1px;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-}
-label.mark {
-    background: url("../img/mark1.png") no-repeat -1px -1px;
-}
-a:hover {
-    color: #ff873e;
-    text-decoration: underline;
-}
-.wrap,
-.wrap_detail,
-.head_wrap,
-.nav,
-.head {
-    margin: 0 auto;
-    width: 980px;
+//商品列表.
+.content-shop{
     height: 100%;
-}
-.cartMain {
-    position: relative;
-    width: 980px;
-    min-width: 980px;
-    max-width: 980px;
-    margin: 0px auto;
-    padding: 0px 0px 0px;
-    min-height: 210px;
-    height: auto;
-    .cartMain_hd {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    color: #3c3c3c;
-    .cartMain_hd .cartTop {
-    height: 50px;
-     .list_chk {
-    width: 80px;
-    text-indent: 30px;
-}
- .list_con {
-    width: 245px;
-}
- .list_chk label {
-    position: absolute;
-    left: 10px;
-    top: 19px;
-    margin: 0;
-}
- .list_info {
-    padding: 0;
-    text-indent: 15px;
-}
- .list_con {
-    text-indent: 29px;
-    }
-
-   }
-  }
+    font-size: 14px;
+    color: #333;
+   .content-shop-top{
+       height: 42px;
+       margin-bottom: 3px;
+       background-color: #fafafa;
+       color: #999;
     
+       ul{
+           height: 42px;
+           
+           li{
+              height: 42px;
+               float: left;
+               line-height: 42px;
+               width: 20px;
+           }
+           .input{
+               width: 45px;
+               height: 40px;
+               line-height: 49px;
+               #all{
+                   width: 18px;
+                   height: 18px;
+                   margin: 0px 20px 0px 7px;
+                   
+               }
+           } 
+            .in-1{
+                width: 130px;
+            } 
+            .list_con{
+                width: 325px;
+            }
+            .list_price{
+                width: 205px;
+            }
+            .list_amount{
+                width: 205px;
+            }
+            .list_sum{
+                width: 129px;
+            }
+            .list_op{
+                width: 28px;
+            }
+
+       }
+   }
+   .shoplist{
+       min-height: 432px;
+       .shoplistdata{
+           min-height: 277px;
+           .shoplistdata-top{
+                   height: 19px;
+                   padding-top: 47px;
+                   padding-bottom: 17px;
+                   vertical-align: middle;
+                   border-bottom: 1px solid #e7e7e7;
+                   .input-x{
+                       display: inline-block;
+                       .xi{
+                           width: 18px;
+                           height: 18px;
+                           margin: 0px 20px 0px 8px;
+                       }
+                   }
+                   .shopname{
+                           margin-left: 10px;
+                       }
+                    
+           }
+           .shopdata{
+               height: 100%;
+               border-bottom: 1px solid #e7e7e7;
+              
+               li{
+                   height: 143px;
+                     border-top: 1px dashed #e7e7e7;
+                   .in-2{
+                      width: 18px;
+                      height: 143px;
+                      float: left;
+                      margin: 0px 5px;
+                    
+                   }
+                   img{
+                       width: 120px;
+                       height: 120px;
+                       margin-left: 38px;
+                       float: left;
+                       margin-top: 10px;
+                   }
+                   p{
+                       width:235px ;
+                       height: 88px;
+                       padding: 27px 80px 27px 5px;
+                       float: left;
+                   }
+                   .price{
+                         width: 177px;
+                         height: 72px;
+                         padding: 35px 0px;
+                         float: left;
+                        line-height: 72px;
+                   }
+                   .list_sum{
+                    margin-top: 53px;
+                    margin-left: -31px;
+                       float: left;
+                       border: 1px solid #b3b3b3;
+                       text-align: center;
+                       line-height: 30px;
+                       .rem,.add{
+                           display: inline-block;
+                          width: 30px;
+                          height: 30px;
+                          font-size: 20px;
+                          margin: 0;
+                          padding: 0;
+                       }
+                       .rem{
+                           color: #999;
+                       }
+                       .add{
+                        color: #845f3f;
+                       }
+                       .txt{
+                            display: inline-block;
+                           width: 70px;
+                           height: 30px;
+                           border-left: 1px solid #b3b3b3 ;
+                           border-right: 1px solid #b3b3b3 ;
+                       }
+                       
+                   }
+                   .sumprice{
+                           float: left;
+                           width: 100px;
+                           height: 143px;
+                          
+                           color: #c00000;
+                           line-height: 135px;
+                           margin-left: 131px;
+                       }
+                       .dol{
+                           float: left;
+                           width: 50px;
+                           height: 143px;
+                           line-height: 135px;
+                           text-align: center;
+                       }
+                }
+                li:nth-child(1){
+                    border: none;
+                }
+                
+           }
+   }  
 }
-
-.cartBox {
-    width: 100%;
-    margin-bottom: 15px;
-    .shop_info {
-    position: relative;
-    width: 100%;
-    height: 38px;
-    background-color: #d1e9f2;
-    line-height: 38px;
-    vertical-align: baseline;
-    .all_check {
-    position: relative;
-    float: left;
-    width: 30px;
-    height: 38px;
-      }
-    .all_check input[type="checkbox"] {
-    position: absolute;
-    z-index: 0;
-    left: -20px;
-    top: -20px;
-   }
-   .all_check .shop {
-    position: absolute;
-    top: 13px;
-   }
-   .shop_name {
-    float: left;
-}
-    }
-    /*商品列表*/
-    .order_content {
-    border: 1px solid #ccc;
-    a {
-    display: block;
+   .content-shop-foot{
+       height: 80px;
+       background-color: #fafafa;
+       line-height: 80px;
+       font-size: 18px;
+       margin-top: 100px;
+       .in-3{
+        width: 18px;
+        height: 80px;
+        float: left;
+        margin: 0px 9px;
      }
-
-   }
-
-}
-.order_lists {
-    width: 100%;
-    height: 130px;
-    background: #f3f3f3;
-    border-bottom: 1px solid #e7e7e7;
-   :last-child {
-    border-bottom: none;
-}
-    li {
-    float: left;
-    height: 100%;
-    padding: 0 6px;
-    text-align: center;
-    }
-    .list_chk {
-    position: relative;
-    width: 44px;
-    input[type="checkbox"] {
-    position: absolute;
-    z-index: 0;
-    left: -20px;
-    top: -20px; 
-      }
-       label {
-    margin: 20px 0 0 24px;
-    }
-    }
-   .list_con {
-    width: 280px;
-    .list_img {
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
-    float: left;
-    img {
-    width: 100%;
-    vertical-align: top;
-   }
-   }
-   .list_text {
-    margin: 20px 0 0 10px;
-    line-height: 18px;
-    width: 200px;
-    float: left;
-     a {
-    color: #3c3c3c;
-      }
-      a:hover {
-        color: #ff873e;
-        text-decoration: underline;
-    }
-    }
-   }
-   .list_info {
-    width: 158px;
-    box-sizing: border-box;
-    padding: 20px 0;
-    p {
-    color: #9c9c9c;
-    line-height: 18px;
-    margin-left: 15px;
-      }
-
-   }
-   .list_price {
-    width: 100px;
-    .price {
-    margin-top: 20px;
-    line-height: 18px;
-    font-family: Verdana, Tahoma, arial;
-    color: #3c3c3c;
-    font-weight: bold;
+     .foot-text{
+            width: 36px;
+            height: 80px;
+            float: left;
+            font-size: 18px;
+            margin-left: 10px;
      }
-
-    } 
-     .list_amount {
-    width: 100px;
-    .amount_box {
-    margin: 20px auto;
-    width: 77px;
-    height: 25px;
-    position: relative;
-    input {
-    width: 39px;
-    height: 15px;
-    line-height: 15px;
-    border: 1px solid #aaa;
-    color: #343434;
-    text-align: center;
-    padding: 4px 0;
-    background-color: #fff;
-    z-index: 2;
-    position: absolute;
-    left: 18px;
-    float: left;
-    }
-    a {
-    float: left;
-    height: 23px;
-    width: 17px;
-    border: 1px solid #e5e5e5;
-    background: #f0f0f0;
-    text-align: center;
-    line-height: 23px;
-    color: #444;
-    position: absolute;
-    top: 0;
-    }
-    a:hover {
-    border-color: #ff873e;
-    text-decoration: none;
-    color: #ff873e;
-    z-index: 3;
+     .yixuan{
+         width: 80px;
+         height: 80px;
+         float: left;
+         margin-left: 20px;
+         .num{
+            margin: 0px 4px;
+         }
      }
-     .reduce {
-    left: 0;
+     .heji{
+         width: 60px;
+         height: 80px;
+         float: left;
+         font-size: 20px;
+         margin-left: 558px;
      }
-     .reSty {
-    color: #cbcbcb;
+     .price-sum{
+            width: 59px;
+            float: left;
+            height: 80px;
+            color: #c00000;
+            font-size: 20px;
      }
-     .reSty:hover {
-    border-right: none;
-    border-color: #e5e5e5;
-    text-decoration: none;
-    color: #cbcbcb;
-     }
-     .plus {
-    border-left-color: transparent;
-    right: 0;
-     }
-
-     }
-    } 
-    .list_sum {
-    width: 115px;
-    .sum_price {
-    line-height: 18px;
-    margin-top: 20px;
-    font-family: Verdana, Tahoma, arial;
-    color: #ff0000;
-    font-weight: bold;
-     }
-    }.list_op {
-    width: 100px;
-    .del {
-    margin-top: 20px;
-    line-height: 18px;
+     .settlement{
+         width: 200px;
+         height: 80px;
+         background-color: #e7e7e7;
+         float: right;
+         text-align: center;
+         font-size: 20px;
+         color: #fff;
      }
    }
 }

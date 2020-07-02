@@ -196,6 +196,7 @@
 .floot {
   height: 136px;
   border-top: 1px solid #e7e7e7;
+  margin-top: 100px;
 }
 .floot .floot-first {
   width: 148px;

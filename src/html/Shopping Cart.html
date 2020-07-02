@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,16 @@
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/public.js"></script>
     <script src="../js/Shopping Cart.js"></script>
-    
+
 </head>
+
 <body>
-     <!-- 头部导航蓝 -->
-     <div class="header">
-         <div class="header-top">
-             <div class="main">
-                 <!-- 当判断是否登录，如果登录就要改变ul的width的长度498px -->
-                 <ul class="ul-1">
+    <!-- 头部导航蓝 -->
+    <div class="header">
+        <div class="header-top">
+            <div class="main">
+                <!-- 当判断是否登录，如果登录就要改变ul的width的长度498px -->
+                <ul class="ul-1">
 
                     <li class="act"><i class="iconfont icon-touxiang f1"></i><span>有你就好</span>
                         <i class="iconfont icon-xialatubiao f2"></i>
@@ -31,21 +33,21 @@
 
                     <li>资质证照 / 协议规则<i class="iconfont icon-xialatubiao f2"></i></li>
                 </ul>
-             </div>
-         </div>
+            </div>
+        </div>
         <div class="header-nav main">
             <div class="nav-first"></div>
             <div class="nav-second"></div>
             <div class="nav-three"><span>限时抢购</span><span>企业采购</span></div>
             <div class="nav-four">
-                <a class="iconfont icon-chazhao "href="javascript:;"></a>
+                <a class="iconfont icon-chazhao " href="javascript:;"></a>
                 <input type="text" value="" placeholder="搜一搜">
             </div>
             <div class="nav-fine"><i class="iconfont icon-gouwuche gou"></i><span>0</span></div>
         </div>
-         
-     </div>
-        <!-- 导航栏 -->
+
+    </div>
+    <!-- 导航栏 -->
     <div class="navi">
         <ul>
             <li>
@@ -66,29 +68,31 @@
             </li>
             <li>
                 <i class="iconfont icon-huidaodingbu "></i>
-               
+
                 <p>回到顶部</p>
             </li>
         </ul>
     </div>
-     <!-- 正文区 -->
+    <!-- 正文区 -->
     <div class="content main">
         <div class="content-title">
             <span> <a href="../html/index.html"> 首页</a>></span>
             <span><a href="#">购物车</a> </span>
         </div>
-        <!-- <div class="kong">
+        <div class="kong">
            <img src="..//img/kong.png" alt="">
            <p>购物车还是空的</p>
            <div class="kong-box"><a href="../html/shoplies.html">继续逛</a></div>
-        </div> -->
-        <section class="cartMain">
-            <div class="cartMain_hd">
-                <ul class="order_lists cartTop">
-                    <li class="list_chk">
-                        <input type="checkbox" id="all" class="whole_check">
-                        <label for="all"></label> 全选
-                    </li>
+        </div>
+        <div class="content-shop">
+            <div class="content-shop-top">
+                <ul>
+                    <!-- <li class="list_chk">
+                       
+                        <span > </span>
+                    </li> -->
+                    <li class="input"><input type="checkbox" id="all" class="whole_check"></li>
+                    <li class="in-1">全选</li>
                     <li class="list_con">商品信息</li>
                     <li class="list_price">单价</li>
                     <li class="list_amount">数量</li>
@@ -96,43 +100,48 @@
                     <li class="list_op">操作</li>
                 </ul>
             </div>
-    
-            <div class="bar-wrapper">
-                <div class="bar-left">
-                  <li class="list_chk">
-                        <input type="checkbox" id="all2" class="whole_check">
-                        <label for="all2"></label> 全选
-                    </li> -->
-                      <li class="list_delall">清空购物车</li>
-                </div>
-                <div class="bar-right">
-                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
-                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
-                    <div class="goshop"><a href="./goodlist.html">继续购物</a></div>
-                    <div class="calBtn"><a href="#">结算</a></div>
-                </div>
+            <div class="shoplist">
+                <!-- <div class="shoplistdata">
+                    <div class="shoplistdata-top">
+                        <span class="input-x"><input type="checkbox" class="xi"></span><span
+                            class="shopname">小米自营</span>
+                    </div>
+                    
+                </div> -->
+                
             </div>
-        </section>
-        <section class="model_bg"></section>
+            <div class="content-shop-foot">
+                <input type="checkbox" class="in-3">
+                <div class="foot-text">全选</div>
+                <div class="yixuan">已选<span class="num">0</span>件</div>
+                <div class="heji">合计：</div>
+                <div class="price-sum">￥<span class="tsum">0</span></div>
+                <div class="settlement">去结算</div>
+            </div>
+        </div>
+
+        <!--         
         <section class="my_model">
             <p class="title">删除宝贝<span class="closeModel">X</span></p>
             <p>您确认要删除该宝贝吗？</p>
             <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
-        </section>
+        </section> -->
     </div>
-   <!-- 版权和解释权 -->
-     <div class="floot">
-         <div class="floot-connt main">
-        <div class="floot-first"></div>
-        <div class="floot-second">
-            <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1<img src="../img/jinghui.png"></img>苏公网安备 32010502010244号</p>
-            <p>企业名称：有品信息科技有限公司<span>关于我们</span><span>入驻有品</span> </p>
-            <p>小米有品平台运营主体变更公告</p>
-            <p>南京市建邺区白龙江东街8号3栋9层</p>
-            <img src="../img/chengxin.png" alt="" class="cx">
+    <!-- 版权和解释权 -->
+    <div class="floot">
+        <div class="floot-connt main">
+            <div class="floot-first"></div>
+            <div class="floot-second">
+                <p>©xiaomiyoupin.com 苏B2-20180351 苏ICP备18025642号-1<img src="../img/jinghui.png"></img>苏公网安备
+                    32010502010244号</p>
+                <p>企业名称：有品信息科技有限公司<span>关于我们</span><span>入驻有品</span> </p>
+                <p>小米有品平台运营主体变更公告</p>
+                <p>南京市建邺区白龙江东街8号3栋9层</p>
+                <img src="../img/chengxin.png" alt="" class="cx">
+            </div>
+
         </div>
-        
-        </div>
-     </div>
+    </div>
 </body>
+
 </html>

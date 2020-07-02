@@ -15,11 +15,11 @@ $(() => {
         data: { user_id },
         dataType: "json"
     }).done(data => {
-        console.log(data)
+        // console.log(data)
         data.map(item=>{
             tsum +=Number(item.num)
         })
-        console.log(tsum)
+        // console.log(tsum)
      
         $(".gou").next().html(tsum)
      
