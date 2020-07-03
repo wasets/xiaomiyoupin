@@ -12,7 +12,7 @@ $(() => {
         createElement() {
             var arr = this.data.map(item => {
                 // console.log(item.imgsrc)
-                return `   <li data-id=${item.good_id}>
+                return `   <li class="tb" data-id=${item.good_id}>
             <div class="img-top">                      
              <img src="${item.img}" alt="">
               <p>${item.title}</p>
@@ -59,5 +59,10 @@ $(() => {
     /* 3、点击按钮的时候加入购物车 */
     $(".gou").click(function() {
         location.href = "./Shopping Cart.html"
+    })
+
+    /*4.点击商品进入商品详情页*/
+    $(".seckill-1").on("click","li",function(){
+        location.href = "./shop.html"
     })
 })

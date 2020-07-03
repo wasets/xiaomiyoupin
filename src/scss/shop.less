@@ -1,0 +1,94 @@
+//商品详情页
+.content{
+    min-height: 680px;
+    font-size: 14px;
+    color: #333;
+    .clearfix{
+        margin-top: 34px;
+    }
+    .clearfix:after, .clearfix:before {
+            content: " ";
+            display: table;    }
+    
+     .clearfix:after {
+         clear: both;
+    }
+     .banner{
+        margin-right: 46px;
+        width: 465px;
+        height: 374px;
+        float: left;
+       .main{
+        width: 372px;
+        height: 372px;
+        background-color: #f4f4f4;
+        border: 1px solid #ececec;
+        position: relative;
+         img {
+        width: 100%;
+        height: 100%;
+         }
+       }
+       .thumb{
+        width: 85px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        .thumb-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: top .3s ease;
+            -o-transition: top .3s ease;
+            transition: top .3s ease;
+           .thumb-pic {
+                width: 83px;
+                height: 83px;
+                margin-bottom: 11px;
+                border-width: 1px;
+                border-style: solid;
+                background-color: #f4f4f4;
+                -webkit-transition: border .5s cubic-bezier(0,1,.5,1);
+                -o-transition: border .5s cubic-bezier(0,1,.5,1);
+                transition: border .5s cubic-bezier(0,1,.5,1);
+               img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+       }
+       
+     }
+     .fl {
+        float: left;
+    }
+    .fr {
+        float: right;
+    }
+    img {
+        vertical-align: middle;
+        border: none;
+    }
+    .sku-container {
+        width: 561px;
+        float: left;
+        .name {
+        margin-bottom: 4px;
+         .self {
+        background-image: url("../img/ximi.png");
+          }
+          .label {
+            float: left;
+            height: 20px;
+            width: 52px;
+            margin-right: 8px;
+            margin-top: 3px;
+            background-size: contain;
+            background-color: transparent;
+            background-repeat: no-repeat;
+       }
+      }
+    }
+  
+}

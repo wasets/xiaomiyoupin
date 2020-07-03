@@ -1,0 +1,92 @@
+.content {
+  min-height: 680px;
+  font-size: 14px;
+  color: #333;
+}
+.content .clearfix {
+  margin-top: 34px;
+}
+.content .clearfix:after,
+.content .clearfix:before {
+  content: " ";
+  display: table;
+}
+.content .clearfix:after {
+  clear: both;
+}
+.content .banner {
+  margin-right: 46px;
+  width: 465px;
+  height: 374px;
+  float: left;
+}
+.content .banner .main {
+  width: 372px;
+  height: 372px;
+  background-color: #f4f4f4;
+  border: 1px solid #ececec;
+  position: relative;
+}
+.content .banner .main img {
+  width: 100%;
+  height: 100%;
+}
+.content .banner .thumb {
+  width: 85px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.content .banner .thumb .thumb-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+.content .banner .thumb .thumb-container .thumb-pic {
+  width: 83px;
+  height: 83px;
+  margin-bottom: 11px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #f4f4f4;
+  -webkit-transition: border 0.5s cubic-bezier(0, 1, 0.5, 1);
+  -o-transition: border 0.5s cubic-bezier(0, 1, 0.5, 1);
+  transition: border 0.5s cubic-bezier(0, 1, 0.5, 1);
+}
+.content .banner .thumb .thumb-container .thumb-pic img {
+  width: 100%;
+  height: 100%;
+}
+.content .fl {
+  float: left;
+}
+.content .fr {
+  float: right;
+}
+.content img {
+  vertical-align: middle;
+  border: none;
+}
+.content .sku-container {
+  width: 561px;
+  float: left;
+}
+.content .sku-container .name {
+  margin-bottom: 4px;
+}
+.content .sku-container .name .self {
+  background-image: url("../img/ximi.png");
+}
+.content .sku-container .name .label {
+  float: left;
+  height: 20px;
+  width: 52px;
+  margin-right: 8px;
+  margin-top: 3px;
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
