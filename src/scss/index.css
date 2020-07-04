@@ -4,7 +4,6 @@ body {
 }
 .banner {
   height: 358px;
-  background-color: red;
   position: relative;
 }
 .banner .banner-left {
@@ -137,7 +136,6 @@ body {
 .banner .banner-right {
   width: 859px;
   height: 358px;
-  background-color: yellow;
   position: absolute;
   top: 0px;
   left: 221px;
