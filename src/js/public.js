@@ -55,5 +55,46 @@ $(() => {
      $(".gou").click(function() {
         location.href = "./Shopping Cart.html"
     })
+    // 点击回到顶部功能
+    let top = document.querySelector('.gettop')
+    console.log(top)
+    //点击事件
+      top.onclick =function(){
+    var scrollTop= document.documentElement.scrollTop || document.body.scrollTop
+     var time=setInterval(function(){
+        //滚动条滚动速度
+        scrollTop -=50
+        document.documentElement.scrollTop = scrollTop
+        //考虑兼容性
+        document.body.scrollTop = scrollTop
+        if(scrollTop <=0 ){
+            clearInterval(time)
+        }
+        },30)
+    }  
+    //浏览器滚动事件
+    window.onscroll =function(){
+         // window.scrollTop有兼容性，直接取取不到
+      // 下面这句话就是获取滚动条高度的一个兼容写法
+      var top = document.documentElement.scrollTop || document.body.scrollTop
+      var owidth =document.documentElement.clientWidth|| document.body.clientWidth
+      console.log(owidth)
+      if(top>400){
+        // console.log($(".header-nav"))
+        $(".header-nav-top").css({
+            position:"fixed",
+            top:"0px",
+            width:owidth
+          
+        })
+      }else{
+        $(".header-nav-top").css({
+            position:"",
+            
+        })
+      }
+
+    }  
+    
    
 })

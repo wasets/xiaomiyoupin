@@ -94,6 +94,12 @@
 .header .header-top .ul-1 {
   width: 498px;
 }
+.header .header-nav-top {
+  height: 76px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 66;
+}
 .header .header-nav {
   height: 76px;
 }
