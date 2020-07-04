@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/public.js"></script>
+    <script src="../js/shop.js"></script>
 
 
 </head>
@@ -75,11 +76,14 @@
     </div>
     <!-- 正文区 -->
     <div class="content main">
-        <div class=" clearfix">
+        <div class=" clearfix box" data-id="1">
             <div class="banner clearfix">
-                <div class="main fl"><img
+                <div class="main fl">
+                    <img id="girl"
                         src="https://img.youpin.mi-img.com/shopmain/1ac115cf3e1311732c6e2f8a7a3d8f44.jpg@base@tag=imgScale&amp;F=webp&amp;h=1080&amp;w=1080?w=1080&amp;h=1080">
+                        <span></span>
                 </div>
+                <div id="bigBox" class="bigBox"><img src="https://img.youpin.mi-img.com/shopmain/1ac115cf3e1311732c6e2f8a7a3d8f44.jpg@base@tag=imgScale&amp;F=webp&amp;h=1080&amp;w=1080?w=1080&amp;h=1080" alt=""></div>
                 <div class="thumb fr" style="display: block;">
                     <div class="thumb-container" style="top: 0px;">
                         <div class="thumb-pic" style="border-color: rgb(132, 95, 63);"><img
@@ -98,16 +102,19 @@
                                 src="https://img.youpin.mi-img.com/shopmain/94587adf0b61548d6dfff1c17aa29f2a.jpg@base@tag=imgScale&amp;F=webp&amp;h=166&amp;w=166">
                         </div>
                     </div>
+                    <div class="thumb-arrow-up"><a class="m-icons m-icons-up-active" href="javascript:;" ></a></div>
+                    <div class="thumb-arrow-down"><a class="m-icons m-icons-down-active" href="javascript:;" ></a></div>
                 </div>
+
             </div>
             <div class="sku-container">
                 <div class="name clearfix">
                     <div class="label self"></div>
-                    <div class="good-name fl">Redmi AirDots S真无线蓝牙耳机</div>
+                    <div class="good-name fl" data-title ="Redmi AirDots S真无线蓝牙耳机">Redmi AirDots S真无线蓝牙耳机</div>
                 </div>
                 <div class="summary"><span class="staticWords">7月3日周五智能家庭日，爆品5折秒，部分单品满199减20，更有多款爆品周五直降特惠中！</span><span
                         class="staticWords hyperlinkWords">戳我！Ge低价好物&gt;&gt;&gt;</span>自动秒连，新一代蓝牙5.0技术 ，12小时长续航 ，</div>
-                <div class="promotion-box"></div>
+
                 <div class="card">
                     <div class="price-line">
                         <h5 class="sku-title">售价</h5>
@@ -117,7 +124,7 @@
                         <h5 class="sku-title">服务</h5>
                         <div class="introduce-container">
                             <p class="icon">!</p>
-                         
+
                         </div>
                         <div class="service">
                             <div class="service-item"><a class="m-icons m-icons-service " data-src=""
@@ -141,6 +148,7 @@
                             <h5 class="sku-title"> 颜色 </h5>
                             <div class="size-container">
                                 <div class="tag-item-offSaled">黑</div>
+                                <div class="tag-item-offSaled">白</div>
                             </div>
                         </div>
                     </div>
@@ -148,17 +156,19 @@
                         <h5 class="sku-title count-title">数量</h5>
                         <div class="count-container">
                             <div>
-                                <div class="minus-btn"><a class="m-icons m-icons-reduce " data-src=""
-                                        href="javascript:;"></a></div><input type="text" value="1" class="count-input">
-                                <div class="minus-btn"><a class="m-icons m-icons-add " data-src=""
-                                        href="javascript:;"></a></div>
+                                <div class="minus-btn"><a class="m-icons m-icons-reduce " id="rem" href="javascript:;" disabled></a>
+                                </div><input type="text" value="1" class="count-input">
+                                <div class="minus-btn">
+                                    <a class="m-icons m-icons-add-active  " id="add" href="javascript:;"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="btn-line">
-                    <div class="buy-btn-container"><a class="m-btns m-btn-middle m-btn-brown-stroke" href="javascript:;"
-                            disabled="">已售罄</a></div>
+                    <div class="buy-btn-container">
+                        <a class="m-btns m-btn-middle m-btn-brown okBtn" href="javascript:;">加入购物车</a>
+                    </div>
                     <div class="favor-btn ">
                         <div><a class="m-icons m-icons-collection " data-src="" href="javascript:;"></a>
                             <p>收藏</p>
@@ -172,6 +182,71 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="xiangqing main">
+        <h2>
+            <span>产品详情</span>|
+            <span>评论</span>|
+            <span>常见问题</span>
+        </h2>
+        <div><img src="https://img.youpin.mi-img.com/shopmain/074ef0afe0ce399a6a471c9a85808200.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/ad607b48c646ed4caa94517019535d16.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/77e8702ade65edcd374ddbe2412c57fc.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/dc4c45ea9cba6c5fd7326b149dce9ca4.jpg?w=1080&amp;h=1117"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/9e2237060f38be7b651c34439a7ce008.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/d5849e847a0c532a7ab5828ab99b97d9.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/cde80b52762c7e0d15d6937a27f4824f.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/34c93817f5fcbac5879aa31d1fe8f1f7.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/237ede2904179db8829cb74b88d3f68a.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/ef8f575555b34bccc3cef701a0d11ff0.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/980f51aac3c61cc52357220ca635ebbd.jpg?w=1080&amp;h=1117"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/f86731ac44a96a24adb1cc43dd1dd31c.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/743569a1b5d31ea2c41eb0fe2bcd01ae.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/b52ee863f6e9dd8aded32393665aff86.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/ae48f420611340e144da8049ea4fbb27.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/3e2bba67d5edb59806887b88287e992d.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/85b96cadcf5a7e19d6d39169321a6e16.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/45ce12a5c0bf641b24158db00d748147.jpg?w=1080&amp;h=1117"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/59abf0035be5618ffcb9029dd8c51df8.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/f64ef520286ec4d29250e917b6bc9878.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/024389779d5cbd380234a60afcc0a929.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/32c732995c1d6e13ed84b7ea9967cbcf.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/ebff07ed3bcff99a010eafae48f0ebe7.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/808372c44c288355e51722a40cc636d8.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/e5fc4c8bd6018144fffaed2775423829.jpg?w=1080&amp;h=1117"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/e6b061eaedd862b6bdf51d5933c5afce.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/e30379634136da457802dfccfcfcc830.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/shopmain/1b79ef679b95dff4d5edc43dbc3cb58b.jpg?w=1080&amp;h=1118"
+                style="width: 100%;"><img
+                src="https://img.youpin.mi-img.com/editor1/34d9309abc25227d26891dddcdf946d0.png?w=1080&amp;h=510"
+                style="width: 100%;"></div>
     </div>
     <!-- 版权和解释权 -->
     <div class="floot">

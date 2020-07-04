@@ -1,8 +1,9 @@
 <?php
+/**该文件负责是首页的商品部分件 */
 header("Content-Type: text/json; charset=UTF-8");
 //1连接数据库
 include_once "./connectDB.php";
-//2.查询获取数据库中的所有秒杀商品
+//2.查询获取数据库中的所有商品
 $sql ="SELECT * FROM indexlist";
 
 $result = mysqli_query($db,$sql);

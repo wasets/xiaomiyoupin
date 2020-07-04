@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/json; charset=UTF-8");
-
+/***该文件负责执行多个数据库表来查询获得商品 */
 /* 1、连接数据库 */
 include_once "./connectDB.php";
 

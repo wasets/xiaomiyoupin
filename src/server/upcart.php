@@ -1,4 +1,12 @@
 <?php
+/*该文件是购物车一些操作，来更新数据库
+type:updata   更新
+sign:add      添加
+sign:rem      减少
+type:del      删除
+
+
+*/
 header("Content-Type: text/json; charset=UTF-8");
 
 /* 1、连接数据库 */

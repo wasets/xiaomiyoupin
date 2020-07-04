@@ -1,4 +1,5 @@
 <?php
+/**该文件负责注册事项 */
 header("Content-type:text/html;charset=utf8");
 include_once "./connectDB.php";
 

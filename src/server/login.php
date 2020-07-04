@@ -1,4 +1,5 @@
 <?php
+/**该文件负责登录检查 */
 // header("Content-type:text/html;charset=utf8");
 $username = $_REQUEST["username"];
 $password = $_REQUEST["password"];

@@ -1,4 +1,5 @@
 $(() => {
+    //轮播图效果
     class lot {
         constructor(ele, json, ulWidth, olWidth = 20, olMargin = 5) {
             this.ol = document.createElement('ol')
