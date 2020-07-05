@@ -99,10 +99,10 @@ $(() => {
         location.href = "./Shopping Cart.html"
     })
 
-    /*4.点击商品进入商品详情页*/
-    $(".seckill-1").on("click","li",function(){
-        location.href = "./shop.html"
-    })
+    // /*4.点击商品进入商品详情页*/
+    // $(".seckill-1").on("click","li",function(){
+    //     location.href = "./shop.html"
+    // })
     /*5.排序功能*/
      $(".paixu >span").click(function() {
 

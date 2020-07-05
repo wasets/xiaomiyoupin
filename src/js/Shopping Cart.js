@@ -7,6 +7,7 @@ $(() => {
     /* 发请求获取购物车的商品信息 */
 
     loadCart();
+    
 
     function loadCart() {
         $(".shoplistdata").remove();
@@ -232,10 +233,10 @@ $(() => {
         }
 
         let price = $(this).parents(".item_pro").find(".newprice").text() * 1;
-        console.log(price * count)
+        // console.log(price * count)
         $(this).parents(".item_pro").find(".sumd").text(price * count);
         let gid = $(this).parents(".item_pro").attr("gid");
-        console.log(localStorage.user_id, gid)
+        // console.log(localStorage.user_id, gid)
         updateCartData(this.className, gid, localStorage.user_id);
         computedTotal();
     });
@@ -265,12 +266,13 @@ $(() => {
                 data: { type: "del", good_id, user_id: localStorage.user_id },
                 dataType: "json",
                 success: function (response) {
-                    console.log(response);
+                    // console.log(response);
                     loadCart();
                 }
+              
             });
-
-        } else {
+           window.location.reload()
+        } else {  
 
             return false;
 
@@ -291,7 +293,7 @@ $(() => {
             //结算功能
             $(".settlement").click(function () {
                 if(confirm(`您好，您购买了${$(".num").text()}件商品，总共是${$(".tsum").text()}元，是否要结算商品？`)){
-                    location.href =" https://www.baidu.com/"
+                    location.href ="../html/index.html"
                 }else{
                     return false
                 }

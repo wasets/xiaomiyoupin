@@ -22,7 +22,7 @@ $(() => {
     });
 
     captcha.draw(document.querySelector('#captcha'), r => {
-        console.log('验证码', r);
+        // console.log('验证码', r);
         imgCode = r;
 
         /* 自动触发标签的事件 */
@@ -61,17 +61,17 @@ $(() => {
     //     }
     // });
   
-    $(".regcont input").blur(function () {
+    $(".regcont input[type=text]").blur(function () {
         let action = this.id;
         let val = $.trim($(this).val());
-        console.log(options[action]);
+        // console.log(options[action],action);
         if (eval(options[action].reg)) {
             if ($(this).next() == $("p")) {
                  $(this).next().css("display", "none")
             } else {
                 $(this).parent().find("p").css("display", "none")
             }
-            console.log( $(this))
+            // console.log( $(this))
             $(this).removeClass("action")
         } else {
              if($(this).next()==$("p")){
@@ -91,9 +91,9 @@ $(() => {
 
 
 /* 注册按钮的点击事件 */
-$("#submit-t").click(function () {
+$(".submit-t").click(function () {
     /* 001-检查用户是否输入了正确的信息并且通过验证，如果没有通过那么就返回 */
-  
+    //  console.log(666)
     $("#user,#imgcoke,#pwd,#pwd-confi,#iphone").trigger("blur");
     if ($(".action").length != 0) {
         return;
@@ -106,7 +106,7 @@ $("#submit-t").click(function () {
         }
       console.log(data)
         /* [3] 发送网络请求去执行注册 */
-        $.ajax({
+     $.ajax({
             url: "../server/res.php",
             type: "post",
             data,

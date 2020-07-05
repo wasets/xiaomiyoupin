@@ -145,7 +145,7 @@ body {
   margin: 5px 0px;
   display: none;
 }
-.box .box-context #submit-t {
+.box .box-context .submit-t {
   width: 332px;
   height: 42px;
   background-color: #ff6700;
@@ -153,7 +153,7 @@ body {
   color: #fff;
   margin-top: 10px;
 }
-.box .box-context #submit-t:hover {
+.box .box-context .submit-t:hover {
   background-color: #ff936a;
 }
 .box .box-context .agree {

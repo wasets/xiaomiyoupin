@@ -38,5 +38,9 @@ $(()=>{
         })
 
     })
+    //点击注册进入注册页面
+    $(".res").click(function(){
+        location.href="../html/Regi.html"
+    })
 
 })

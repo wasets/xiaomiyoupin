@@ -1,6 +1,6 @@
 <?php
 /**该文件负责注册事项 */
-header("Content-type:text/html;charset=utf8");
+// header("Content-type:text/html;charset=utf8");
 include_once "./connectDB.php";
 
 /* 核心逻辑： */
@@ -9,7 +9,8 @@ $username = $_REQUEST["username"];
 $password = $_REQUEST["password"];
 $phone = $_REQUEST["phone"];
 
-$sql = "SELECT * FROM `user` WHERE username = '$username'";
+
+$sql = "SELECT * FROM user WHERE username = '$username'";
 
 $r = mysqli_query($db, $sql);
 
@@ -21,7 +22,7 @@ if($num == 1){
   
 }else{
   $sql = "INSERT INTO user " .
-    "(id,username,password,user_date,phone)" .
+    "(user_id,username,password,user_date,phone)" .
     "VALUES " .
     "(NULL,'$username','$password','2020-06-28',$phone)";
 
