@@ -89,6 +89,7 @@ $(() => {
                 let slider = new shoprun(data)
                 slider.init()
                 
+                
             }
         });
 
@@ -112,7 +113,8 @@ $(() => {
         console.log("sortType", sortType);
 
         getDataAndRenderUI(sortType);
-
+        $(".pagination li").removeClass("active")
+        $(".pagination li:eq(1)").addClass("active")
         /* 发送网络请求：请求排序后的数据 */
         // $.ajax({
         //     type: "get",

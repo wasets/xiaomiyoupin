@@ -2,41 +2,41 @@
 $(() => {
     // console.log(datas)
     let user_id = localStorage.getItem("user_id") || "";
-    let user_name=localStorage.getItem("user_name");
-//    console.log(user_id==="")===>true
+    let user_name = localStorage.getItem("user_name");
+    //    console.log(user_id==="")===>true
     /* 发请求获取购物车的商品信息 */
- console.log(user_name==null)
-  loadCart();
+
+    loadCart();
 
     function loadCart() {
         $(".shoplistdata").remove();
-           $.ajax({
-        url: "../server/getcart.php",
-        data: { user_id },
-        dataType: "json"
-    }).done(data => {
-        console.log(data.length)
-        dataTool(data);
-        if(user_name===null){
-            console.log(666)
-        }
-        if(user_id){
-             if(data.length!==0){
-                  $(".kong").css("display","none")
-                  $(".content-shop").css("display","block")
-             }else {
-                $(".kong").css("display","block")
-                $(".content-shop").css("display","none")
-             }
-        }
+        $.ajax({
+            url: "../server/getcart.php",
+            data: { user_id },
+            dataType: "json"
+        }).done(data => {
 
-        // if(user_id==="" ) {
-        //     console.log(666)
-        //      $(".kong").css("display","block")
-        //      $(".content-shop").css("display","none")
-        // }
+            dataTool(data);
+            if (user_name === null) {
+                console.log(666)
+            }
+            if (user_id) {
+                if (data.length !== 0) {
+                    $(".kong").css("display", "none")
+                    $(".content-shop").css("display", "block")
+                } else {
+                    $(".kong").css("display", "block")
+                    $(".content-shop").css("display", "none")
+                }
+            }
 
-    })
+            // if(user_id==="" ) {
+            //     console.log(666)
+            //      $(".kong").css("display","block")
+            //      $(".content-shop").css("display","none")
+            // }
+
+        })
     }
     function dataTool(data) {
         let arr = [];
@@ -92,10 +92,9 @@ $(() => {
         })
         $(".shoplist").html(html)
     }
-  
+
     //全选的功能：点击的时候，店名和商品都要选中，
-    let tsum = 0;
-    let tnum = 0;
+
     $("#all").click(function () {
         if (this.checked) {
             //点击全选，那就下面的单选框都全选上，2计算总价和总件数
@@ -103,29 +102,30 @@ $(() => {
             Array.from($(".shoplist :input")).forEach(item => {
                 item.checked = "checked"
                 computedTotal()
-                $(".settlement").css({
-                    background: "#a9010d",
-                    color: "#fff"
-                })
 
             })
+            // console.log($(".tsum").text())
+            // let osum=$(".tsum").text()
+            //     $(".shoplist").on("change", ".in-2", function () {
+            //         if(this.checked==false){
+            //            osum-= $(this).parent().find(".sumd").text() * 1
+            //            $(".tsum").text(osum.toFixed(2))
+            //         }
 
+            //     })
+
+            // $(".tsum").text(osum.toFixed(2));
         } else {
             Array.from($(".shoplist :input")).forEach(item => {
                 item.checked = ""
                 computedTotal()
             })
-            $(".settlement").css({
-                background: "#e7e7e",
-                color: "#fff"
-            })
+
         }
     })
 
 
-    //计量
-    let total = 0;
-    let totalPrice = 0;
+
     //点击商店的全选，该商店的所有商品被勾选上，并且计算总价和总件数
     $(".shoplist").on("click", ".xi", function () {
         let arr = $(this).parents(".shoplist").find(".xi");
@@ -136,25 +136,20 @@ $(() => {
             Array.from(shopdan).forEach(item => {
                 item.checked = "checked";
             })
-            $(".settlement").css({
-                "background": "#a9010d",
-                "color": "#fff"
-            })
+
             if (Array.from(arr).every(ischeck)) {
                 $("#all")[0].checked = true;
             }
             // console.log($(this).parents(".shoplistdata").find(".txt"))
-            Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
-                total += item.innerText * 1
-            })
-            Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
-                totalPrice += item.innerText * 1
-            })
+            // Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
+            //     total += item.innerText * 1
+            // })
+            // Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
+            //     totalPrice += item.innerText * 1
+            // })
+            computedTotal()
         } else {
-            $(".settlement").css({
-                background: "#e7e7e",
-                color: "#fff"
-            })
+
 
             Array.from(shopdan).forEach(item => {
                 item.checked = "";
@@ -163,15 +158,16 @@ $(() => {
             if (!Array.from(arr).every(ischeck)) {
                 $("#all")[0].checked = false;
             }
-            Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
-                total -= item.innerText * 1
-            })
-            Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
-                totalPrice -= item.innerText * 1
-            })
+            // Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
+            //     total -= item.innerText * 1
+            // })
+            // Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
+            //     totalPrice -= item.innerText * 1
+            // })
+            computedTotal()
         }
-        $(".num").text(total);
-        $(".tsum").text(totalPrice.toFixed(2));
+        // $(".num").text(total);
+        // $(".tsum").text(totalPrice.toFixed(2));
     })
 
 
@@ -182,35 +178,30 @@ $(() => {
 
         if (this.checked) {
 
-            $(".settlement").css({
-                "background": "#a9010d",
-                "color": "#fff"
-            })
-            total += $(this).parent().find(".txt").text() * 1
-            totalPrice += $(this).parent().find(".sumd").text() * 1
+            // total += $(this).parent().find(".txt").text() * 1
+            // totalPrice += $(this).parent().find(".sumd").text() * 1
             if (Array.from(arr).every(ischeck)) {
                 $(this).parents(".shoplistdata").find(".xi")[0].checked = true;
             }
             if (Array.from(arr1).every(ischeck)) {
                 $("#all")[0].checked = true;
             }
+            computedTotal()
         } else {
-            $(".settlement").css({
-                background: "#e7e7e",
-                color: "#fff"
-            })
-            total -= $(this).parent().find(".txt").text() * 1
-            totalPrice -= $(this).parent().find(".sumd").text() * 1
+            // console.log($("#all").is(checked))
+
+            // total -= $(this).parent().find(".txt").text() * 1
+            // totalPrice -= $(this).parent().find(".sumd").text() * 1
             if (!Array.from(arr).every(ischeck)) {
                 $(this).parents(".shoplistdata").find(".xi")[0].checked = false;
             }
             if (!Array.from(arr1).every(ischeck)) {
                 $("#all")[0].checked = false;
             }
-
+            computedTotal()
         }
-        $(".num").text(total);
-        $(".tsum").text(totalPrice.toFixed(2));
+        // $(".num").text(total);
+        // $(".tsum").text(totalPrice.toFixed(2));
 
 
     })
@@ -258,7 +249,7 @@ $(() => {
                 user_id,
                 good_id,
             },
-            success:function(){
+            success: function () {
                 window.location.reload()
             }
         });
@@ -266,33 +257,52 @@ $(() => {
 
     /* 删除功能 */
     $("body").on("click", ".dol", function () {
-        if(confirm('确定要删除吗')==true){
+        if (confirm('确定要删除吗') == true) {
 
-           let good_id = $(this).parents(".item_pro").attr("gid");
-        $.ajax({
-            url: "../server/upcart.php",
-            data: { type: "del", good_id, user_id:localStorage.user_id },
-            dataType: "json",
-            success: function (response) {
-                console.log(response);
-                loadCart();
-            }
-        });
-     
-         }else{
-     
+            let good_id = $(this).parents(".item_pro").attr("gid");
+            $.ajax({
+                url: "../server/upcart.php",
+                data: { type: "del", good_id, user_id: localStorage.user_id },
+                dataType: "json",
+                success: function (response) {
+                    console.log(response);
+                    loadCart();
+                }
+            });
+
+        } else {
+
             return false;
-     
-         }
-        
+
+        }
+
     })
 
     function computedTotal() {
         let ele = $(".item_pro").filter(function () {
-            return $(".in-2").prop("checked") == true;
+            return $(".in-2", this).prop("checked") == true;
 
         })
-        console.log(ele, $(".in-2").prop("checked"))
+        if (ele.length > 0) {
+            $(".settlement").css({
+                "background": "#a9010d",
+                "color": "#fff"
+            })
+            //结算功能
+            $(".settlement").click(function () {
+                if(confirm(`您好，您购买了${$(".num").text()}件商品，总共是${$(".tsum").text()}元，是否要结算商品？`)){
+                    location.href =" https://www.baidu.com/"
+                }else{
+                    return false
+                }
+            })
+        } else if (ele.length < 1) {
+            $(".settlement").css({
+                background: "",
+                color: ""
+            })
+        }
+        // console.log(ele)
         // /* 计算数量 */
         let total = 0;
         let totalPrice = 0;
@@ -301,11 +311,11 @@ $(() => {
             total += $(item).find(".txt").text() * 1;
             totalPrice += $(item).find(".sumd").text() * 1;
         })
-
+        console.log(total, totalPrice)
         $(".num").text(total);
         $(".tsum").text(totalPrice.toFixed(2));
     }
 
 
-
 })
+

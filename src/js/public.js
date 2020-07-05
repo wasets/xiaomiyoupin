@@ -57,7 +57,7 @@ $(() => {
     })
     // 点击回到顶部功能
     let top = document.querySelector('.gettop')
-    console.log(top)
+  
     //点击事件
       top.onclick =function(){
     var scrollTop= document.documentElement.scrollTop || document.body.scrollTop
@@ -78,7 +78,7 @@ $(() => {
       // 下面这句话就是获取滚动条高度的一个兼容写法
       var top = document.documentElement.scrollTop || document.body.scrollTop
       var owidth =document.documentElement.clientWidth|| document.body.clientWidth
-      console.log(owidth)
+      
       if(top>400){
         // console.log($(".header-nav"))
         $(".header-nav-top").css({

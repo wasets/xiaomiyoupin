@@ -328,7 +328,7 @@ $(() => {
             //获取后端的数据
             this.data = data
             //下标索引
-       console.log(this.data)
+    //    console.log(this.data)
         }
         //初始状态
         init() {
@@ -383,4 +383,14 @@ $.ajax({
     //     location.href = "https://m.xiaomiyoupin.com/w/mifans?_rt=weex&pageid=3634";
     // })
    
+    //点击商品进入商品详情页
+    $(".seckill-3").on("click","li",function(){
+        location.href = "./shop.html"
+    })
+    $(".seckill-2").on("click","li",function(){
+        location.href = "./shop.html"
+    })
+    $(".seckill").on("click","li",function(){
+        location.href = "./shop.html"
+    })
 })
