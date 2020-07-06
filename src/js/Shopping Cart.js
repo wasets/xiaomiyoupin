@@ -74,12 +74,12 @@ $(() => {
                    <p>${item.title}</p>
                    <div class="price">￥<span class="newprice" data-price=${item.price}>${item.price}</span></div>
                    <div class="list_sum">
-                       <a href="##" class="rem">-</a>
+                       <a href="###" class="rem">-</a>
                        <span class="txt">${item.num}</span>
-                       <a href="##" class="add">+</a>
+                       <a href="###" class="add">+</a>
                    </div>
                    <div class="sumprice">￥<span class="sumd">${item.price * item.num}</span></div>
-                   <a href="##"  class="dol">X</a>
+                   <a href="###"  class="dol">X</a>
                </li> `}).join("")
 
 
@@ -141,13 +141,7 @@ $(() => {
             if (Array.from(arr).every(ischeck)) {
                 $("#all")[0].checked = true;
             }
-            // console.log($(this).parents(".shoplistdata").find(".txt"))
-            // Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
-            //     total += item.innerText * 1
-            // })
-            // Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
-            //     totalPrice += item.innerText * 1
-            // })
+           
             computedTotal()
         } else {
 
@@ -159,16 +153,10 @@ $(() => {
             if (!Array.from(arr).every(ischeck)) {
                 $("#all")[0].checked = false;
             }
-            // Array.from($(this).parents(".shoplistdata").find(".txt")).forEach(item => {
-            //     total -= item.innerText * 1
-            // })
-            // Array.from($(this).parents(".shoplistdata").find(".sumd")).forEach(item => {
-            //     totalPrice -= item.innerText * 1
-            // })
+          
             computedTotal()
         }
-        // $(".num").text(total);
-        // $(".tsum").text(totalPrice.toFixed(2));
+       
     })
 
 
@@ -212,8 +200,15 @@ $(() => {
     }
 
     //商品数量改变，增减事件，并更新数据库
-    $(".shoplist").on("click", ".rem,.add", function () {
+    $(".shoplist").on("click", ".rem,.add", function (e) {
         /* 更改数量|发送网络请求 */
+        e=e||window.event;
+        if(e.preventDefault) {
+            e.preventDefault();
+            }else {    
+                   return false;
+           }
+          console.log(666)
         let count;
         if (this.className == "add") {
 
@@ -251,7 +246,8 @@ $(() => {
                 good_id,
             },
             success: function () {
-                window.location.reload()
+                // window.location.reload()
+                console.log(6666)
             }
         });
     }
